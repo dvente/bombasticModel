@@ -1,0 +1,29 @@
+$ Grid indexing is 1-based
+
+$ 6 Steps:
+$ Ice prevents retracing steps and force one course
+$ before other
+
+$ 0 0 0 0 0 0
+$ 0 * i b g 0
+$ 0 2 2 b g 0
+$ 0 0 0 0 0 0
+
+$ key: 
+$ 0 dead
+$ 1 ice
+$ 2 normal
+letting gridInit be [[0, 0, 0, 0, 0, 0],
+                     [0, 2, 1, 2, 2, 0],
+                     [0, 2, 2, 2, 2, 0],
+                     [0, 0, 0, 0, 0, 0]]
+      
+letting avatarInitRow be 2
+letting avatarInitCol be 2
+letting numBlocks be 2
+letting blocksInitRow be [2, 3]
+letting blocksInitCol be [4, 4]
+letting blocksGoalRow be [2, 3]
+letting blocksGoalCol be [5, 5]
+
+letting steps be 6

@@ -1,0 +1,26 @@
+MINION 3
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# CSE_active_number = 0
+# CSE_active_eliminated_expressions = 0
+# CSE_active_total_size = 0
+**VARIABLES**
+**TUPLELIST**
+gridInit 4 5
+0 0 0 0 0 
+0 2 2 2 0 
+0 2 2 2 0 
+0 0 0 0 0 
+**VARIABLES**
+ALIAS gridInit[4,5]=[[0, 0, 0, 0, 0], [0, 2, 2, 2, 0], [0, 2, 2, 2, 0], [0, 0, 0, 0, 0]]
+ALIAS blocksInitRow[1]=[3]
+ALIAS blocksInitCol[1]=[3]
+ALIAS blocksGoalRow[1]=[3]
+ALIAS blocksGoalCol[1]=[4]
+**SEARCH**
+PRINT[]
+VARORDER STATIC [0, 1, 0, -1, 0, 1, 2, 2, 3, 3, 3, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0]
+VARORDER AUX []
+**CONSTRAINTS**
+true()**EOF**

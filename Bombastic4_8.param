@@ -1,0 +1,28 @@
+$ Grid indexing is 1-based
+
+$ 8 steps:
+$ 0 0   0   0   0 0
+$ 0 */g b   2   0 0
+$ 0 2   2   b/i g 0
+$ 0 0   i   b   g 0
+$ 0 0   0   0   0 0
+
+$ key: 
+$ 0 dead
+$ 1 ice
+$ 2 normal
+letting gridInit be [[0, 0, 0, 0, 0, 0],
+                     [0, 2, 2, 2, 0, 0],
+                     [0, 2, 2, 1, 2, 0],
+                     [0, 0, 1, 2, 2, 0],
+                     [0, 0, 0, 0, 0, 0]]
+      
+letting avatarInitRow be 2
+letting avatarInitCol be 2
+letting numBlocks be 3
+letting blocksInitRow be [2, 3, 4]
+letting blocksInitCol be [3, 4, 4]
+letting blocksGoalRow be [2, 3, 4]
+letting blocksGoalCol be [2, 5, 5]
+
+letting steps be 8

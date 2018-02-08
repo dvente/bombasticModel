@@ -1,0 +1,32 @@
+$ Grid indexing is 1-based
+
+$ 12 steps:
+$ Cant push b2 left because then have to get under to push
+$   up and then ice & b1 stop you getting back up top. 
+$ b1 on ice to take away path choice back to  b2, which 
+$   could go through init pos of b1.
+$ 0 0 0 0    0    0 0
+$ 0 g * b1/i _    g 0
+$ 0 0 _ _    b2/i _ 0
+$ 0 0 0 _    _    _ 0
+$ 0 0 0 0    0    0 0
+
+$ key: 
+$ 0 dead
+$ 1 ice
+$ 2 normal
+letting gridInit be [[0, 0, 0, 0, 0, 0, 0],
+                     [0, 2, 2, 1, 2, 2, 0],
+                     [0, 0, 2, 2, 1, 2, 0],
+                     [0, 0, 0, 2, 2, 2, 0],
+                     [0, 0, 0, 0, 0, 0, 0]]
+      
+letting avatarInitRow be 2
+letting avatarInitCol be 3
+letting numBlocks be 2
+letting blocksInitRow be [2, 3]
+letting blocksInitCol be [4, 5]
+letting blocksGoalRow be [2, 2]
+letting blocksGoalCol be [2, 6]
+
+letting steps be 12
