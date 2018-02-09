@@ -1,7 +1,19 @@
 MINION 3
+# AC-CSE-Times_number = 0
+# AC-CSE-Times_eliminated_expressions = 0
+# AC-CSE-Times_total_size = 0
 # CSETopLevel_number = 0
 # CSETopLevel_eliminated_expressions = 0
 # CSETopLevel_total_size = 0
+# AC-CSE-Or_number = 0
+# AC-CSE-Or_eliminated_expressions = 0
+# AC-CSE-Or_total_size = 0
+# AC-CSE-And_number = 0
+# AC-CSE-And_eliminated_expressions = 0
+# AC-CSE-And_total_size = 0
+# AC-CSE-Sum_number = 0
+# AC-CSE-Sum_eliminated_expressions = 0
+# AC-CSE-Sum_total_size = 0
 # CSE_active_number = 0
 # CSE_active_eliminated_expressions = 0
 # CSE_active_total_size = 0
@@ -19,7 +31,7 @@ DISCRETE avatarCurrentRow_00003 #
 DISCRETE avatarCurrentCol_00000 #
 {1..5}
 DISCRETE avatarCurrentCol_00003 #
-{3..5}
+{4..5}
 DISCRETE blocksCurrentRow_00000_00000 #
 {1..5}
 DISCRETE blocksCurrentRow_00000_00001 #

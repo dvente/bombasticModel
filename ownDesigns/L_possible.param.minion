@@ -1,10 +1,22 @@
 MINION 3
+# AC-CSE-Times_number = 0
+# AC-CSE-Times_eliminated_expressions = 0
+# AC-CSE-Times_total_size = 0
 # CSETopLevel_number = 0
 # CSETopLevel_eliminated_expressions = 0
 # CSETopLevel_total_size = 0
-# CSE_active_number = 19
-# CSE_active_eliminated_expressions = 40
-# CSE_active_total_size = 165
+# AC-CSE-Or_number = 4
+# AC-CSE-Or_eliminated_expressions = 8
+# AC-CSE-Or_total_size = 84
+# AC-CSE-And_number = 2
+# AC-CSE-And_eliminated_expressions = 4
+# AC-CSE-And_total_size = 6
+# AC-CSE-Sum_number = 18
+# AC-CSE-Sum_eliminated_expressions = 41
+# AC-CSE-Sum_total_size = 56
+# CSE_active_number = 6
+# CSE_active_eliminated_expressions = 14
+# CSE_active_total_size = 65
 **VARIABLES**
 DISCRETE moveRow_00000 #
 {0..1}
@@ -28,52 +40,54 @@ DISCRETE avatarCurrentCol_00003 #
 {3..4}
 DISCRETE blocksCurrentRow_00001_00001 #
 {3..4}
-BOOL aux82 #Active-CSE: 2 occurrences of this expression or equivalent: (((2 != (avatarCurrentRow_00003 + 2*moveRow_00002)) \/ ((avatarCurrentCol_00003 + 2*moveCol_00002) != 2)) /\ ((4 != (avatarCurrentRow_00003 + 2*moveRow_00002)) \/ ((avatarCurrentCol_00003 + 2*moveCol_00002) != 4)))
-BOOL aux83 #Active-CSE: 2 occurrences of this expression or equivalent: ((((avatarCurrentCol_00001 + 2*moveCol_00000) != 4) \/ (blocksCurrentRow_00001_00001 != (avatarCurrentRow_00001 + 2*moveRow_00000))) /\ ((2 != (avatarCurrentRow_00001 + 2*moveRow_00000)) \/ ((avatarCurrentCol_00001 + 2*moveCol_00000) != 2)))
-DISCRETE aux84 #Active-CSE: 3 occurrences of this expression or equivalent: SafeElement([2, 2, 0, 0, 0, 0, 2;int(1..7)], (5*avatarCurrentRow_00001 + avatarCurrentCol_00001-13))
-{0..2}
-BOOL aux85 #Active-CSE: 2 occurrences of this expression or equivalent: ((moveRow_00002 + 2) != blocksCurrentRow_00002_00001)
-DISCRETE aux91 #Active-CSE: 2 occurrences of this expression or equivalent: (avatarCurrentRow_00003 + 2*moveRow_00002)
-{2..5}
-DISCRETE aux92 #Active-CSE: 2 occurrences of this expression or equivalent: (avatarCurrentRow_00001 + 2*moveRow_00000)
-{2..5}
-DISCRETE aux94 #Active-CSE: 2 occurrences of this expression or equivalent: (avatarCurrentCol_00003 + moveCol_00002)
-{2..4}
-DISCRETE aux95 #Active-CSE: 2 occurrences of this expression or equivalent: (avatarCurrentCol_00001 + moveCol_00000)
-{2..4}
-DISCRETE aux97 #Active-CSE: 2 occurrences of this expression or equivalent: (avatarCurrentCol_00001 + 2*moveCol_00000)
-{1..4}
-DISCRETE aux98 #Active-CSE: 2 occurrences of this expression or equivalent: (avatarCurrentCol_00003 + 2*moveCol_00002)
-{1..4}
-DISCRETE aux99 #Active-CSE: 2 occurrences of this expression or equivalent: (avatarCurrentRow_00001 + moveRow_00000)
-{2..4}
-DISCRETE aux100 #Active-CSE: 2 occurrences of this expression or equivalent: (avatarCurrentRow_00003 + moveRow_00002)
-{2..4}
-DISCRETE aux101 #(5*avatarCurrentRow_00001 + avatarCurrentCol_00001-13)
+BOOL aux82 #AC-CSE-Generic-\/: 2 occurrences of: (((avatarCurrentCol_00001 + 2*moveCol_00000) != 4) \/ (blocksCurrentRow_00001_00001 != (avatarCurrentRow_00001 + 2*moveRow_00000)))
+BOOL aux83 #AC-CSE-Generic-\/: 2 occurrences of: ((2 != (avatarCurrentRow_00001 + 2*moveRow_00000)) \/ ((avatarCurrentCol_00001 + 2*moveCol_00000) != 2))
+BOOL aux84 #AC-CSE-Generic-\/: 2 occurrences of: ((2 != (avatarCurrentRow_00003 + 2*moveRow_00002)) \/ ((avatarCurrentCol_00003 + 2*moveCol_00002) != 2))
+BOOL aux85 #AC-CSE-Generic-\/: 2 occurrences of: ((4 != (avatarCurrentRow_00003 + 2*moveRow_00002)) \/ ((avatarCurrentCol_00003 + 2*moveCol_00002) != 4))
+BOOL aux86 #AC-CSE-Generic-/\: 2 occurrences of: (aux82 /\ aux83)
+BOOL aux87 #AC-CSE-Generic-/\: 2 occurrences of: (aux84 /\ aux85)
+DISCRETE aux88 #AC-CSE-Generic-+: 4 occurrences of: (5*avatarCurrentRow_00001 + avatarCurrentCol_00001-13)
 {0..6}
-DISCRETE aux102 #(moveRow_00000 + 3)
-{3..4}
-DISCRETE aux103 #(moveCol_00001 + 4)
-{4..5}
-DISCRETE aux104 #(2*moveCol_00001 + 4)
-{4..6}
-DISCRETE aux105 #(moveRow_00001 + 2)
-{1..2}
-DISCRETE aux106 #(2*moveRow_00001 + 2)
-{0..2}
-DISCRETE aux107 #(5*avatarCurrentRow_00003 + avatarCurrentCol_00003-13)
+DISCRETE aux92 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00001 + 2*moveCol_00000)
+{1..4}
+DISCRETE aux93 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00001 + 2*moveRow_00000)
+{2..5}
+DISCRETE aux94 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00003 + 2*moveRow_00002)
+{2..5}
+DISCRETE aux95 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00003 + 2*moveCol_00002)
+{1..4}
+DISCRETE aux97 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00001 + moveRow_00000)
+{2..4}
+DISCRETE aux98 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00001 + moveCol_00000)
+{2..4}
+DISCRETE aux101 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00003 + moveRow_00002)
+{2..4}
+DISCRETE aux102 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00003 + moveCol_00002)
+{2..4}
+DISCRETE aux103 #AC-CSE-Generic-+: 2 occurrences of: (5*avatarCurrentRow_00003 + avatarCurrentCol_00003-13)
 {0..6}
-DISCRETE aux108 #SafeElement([2, 2, 0, 0, 0, 0, 2;int(1..7)], aux107)
+DISCRETE aux105 #AC-CSE-Generic-+: 2 occurrences of: (-15 + 5*blocksCurrentRow_00001_00001)
+{0..5}
+DISCRETE aux106 #Active-CSE: 4 occurrences of this expression or equivalent: SafeElement([2, 2, 0, 0, 0, 0, 2;int(1..7)], aux88)
 {0..2}
-DISCRETE aux109 #(moveRow_00002 + blocksCurrentRow_00001_00001)
+DISCRETE aux107 #Active-CSE: 2 occurrences of this expression or equivalent: SafeElement([2, 2, 0, 0, 0, 0, 2;int(1..7)], aux103)
+{0..2}
+DISCRETE aux108 #Active-CSE: 2 occurrences of this expression or equivalent: SafeElement([2, 0, 0, 0, 0, 2;int(1..6)], aux105)
+{0..2}
+DISCRETE aux109 #Active-CSE: 2 occurrences of this expression or equivalent: SafeElement([2, 0, 0, 0, 0, 2;int(1..6)], aux104)
+{0..2}
+BOOL aux110 #Active-CSE: 2 occurrences of this expression or equivalent: (avatarCurrentRow_00003 != blocksCurrentRow_00001_00001)
+DISCRETE aux115 #(moveRow_00002 + blocksCurrentRow_00001_00001)
 {3..5}
-DISCRETE aux110 #(-15 + 5*blocksCurrentRow_00001_00001)
-{0..5}
-DISCRETE aux111 #SafeElement([2, 0, 0, 0, 0, 2;int(1..6)], aux110)
-{0..2}
-DISCRETE aux112 #(-15 + 5*blocksCurrentRow_00001_00001)
-{0..5}
-DISCRETE aux113 #SafeElement([2, 0, 0, 0, 0, 2;int(1..6)], aux112)
+DISCRETE aux116 #(moveRow_00000 + 3)
+{3..4}
+DISCRETE aux117 #(moveCol_00001 + 4)
+{4..5}
+DISCRETE aux118 #(2*moveCol_00001 + 4)
+{4..6}
+DISCRETE aux119 #(moveRow_00001 + 2)
+{1..2}
+DISCRETE aux120 #(2*moveRow_00001 + 2)
 {0..2}
 **TUPLELIST**
 gridInit 5 5
@@ -91,82 +105,88 @@ ALIAS blocksGoalCol[2]=[2, 4]
 **SEARCH**
 PRINT[[moveRow_00000],[moveRow_00001],[moveRow_00002],[moveCol_00000],[moveCol_00001],[moveCol_00002],[avatarCurrentRow_00001],[avatarCurrentRow_00003],[avatarCurrentCol_00001],[avatarCurrentCol_00003],[blocksCurrentRow_00001_00001]]
 VARORDER STATIC [moveRow_00000, moveRow_00001, moveRow_00002, moveCol_00000, moveCol_00001, moveCol_00002, 2, avatarCurrentRow_00001, 2, avatarCurrentRow_00003, 4, avatarCurrentCol_00001, 4, avatarCurrentCol_00003, 2, 3, 2, blocksCurrentRow_00001_00001, 2, blocksCurrentRow_00001_00001, 2, 4, 2, 4, 2, 4, 2, 4, 2, 4, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0]
-VARORDER AUX [moveRow_00000,moveRow_00001,moveRow_00002,moveCol_00000,moveCol_00001,moveCol_00002,avatarCurrentRow_00001,avatarCurrentRow_00003,avatarCurrentCol_00001,avatarCurrentCol_00003,blocksCurrentRow_00001_00001,aux82,aux83,aux84,aux85,aux91,aux92,aux94,aux95,aux97,aux98,aux99,aux100,aux101,aux102,aux103,aux104,aux105,aux106,aux107,aux108,aux109,aux110,aux111,aux112,aux113]
+VARORDER AUX [moveRow_00000,moveRow_00001,moveRow_00002,moveCol_00000,moveCol_00001,moveCol_00002,avatarCurrentRow_00001,avatarCurrentRow_00003,avatarCurrentCol_00001,avatarCurrentCol_00003,blocksCurrentRow_00001_00001,aux82,aux83,aux84,aux85,aux86,aux87,aux88,aux92,aux93,aux94,aux95,aux97,aux98,aux101,aux102,aux103,aux105,aux106,aux107,aux108,aux109,aux110,aux115,aux116,aux117,aux118,aux119,aux120]
 **CONSTRAINTS**
-watchelement_undefzero([2, 2, 0, 0, 0, 0, 2], aux107, aux108)
-watchelement_undefzero([2, 0, 0, 0, 0, 2], aux110, aux111)
-watchelement_undefzero([2, 0, 0, 0, 0, 2], aux112, aux113)
-reify(watched-and({watched-or({diseq(2,aux91),diseq(aux98,2)}),watched-or({diseq(4,aux91),diseq(aux98,4)})}), aux82)
-reify(watched-and({watched-or({diseq(aux97,4),diseq(blocksCurrentRow_00001_00001,aux92)}),watched-or({diseq(2,aux92),diseq(aux97,2)})}), aux83)
-watchelement_undefzero([2, 2, 0, 0, 0, 0, 2], aux101, aux84)
-reify(diseq(avatarCurrentRow_00003,blocksCurrentRow_00001_00001), aux85)
-diseq(0,aux84)
-watched-or({diseq(2,aux99),w-literal(aux83,1),diseq(aux95,2)})
-watched-or({w-literal(blocksCurrentRow_00001_00001,4),watched-and({w-literal(moveCol_00002,0),w-literal(aux85,0)})})
-watched-or({diseq(avatarCurrentCol_00001,4),diseq(avatarCurrentRow_00001,3),watched-and({gaceq(aux102,blocksCurrentRow_00001_00001),w-literal(moveCol_00000,0)})})
-watched-or({diseq(aux103,4),diseq(aux104,4),diseq(aux105,blocksCurrentRow_00001_00001),diseq(aux106,blocksCurrentRow_00001_00001)})
-diseq(0,aux108)
-watched-or({diseq(avatarCurrentCol_00003,4),w-literal(aux85,1),watched-and({w-literal(moveCol_00002,0),w-literal(aux109,4)})})
-diseq(aux111,0)
-watched-or({watched-and({w-literal(moveRow_00000,1),w-literal(moveCol_00000,0)}),w-literal(blocksCurrentRow_00001_00001,3)})
-diseq(0,aux113)
-watched-or({diseq(4,aux100),diseq(aux94,4),w-literal(aux82,1)})
+watchelement_undefzero([2, 2, 0, 0, 0, 0, 2], aux88, aux106)
+watchelement_undefzero([2, 2, 0, 0, 0, 0, 2], aux103, aux107)
+watchelement_undefzero([2, 0, 0, 0, 0, 2], aux105, aux108)
+watchelement_undefzero([2, 0, 0, 0, 0, 2], aux105, aux109)
+reify(diseq(avatarCurrentRow_00003,blocksCurrentRow_00001_00001), aux110)
+diseq(0,aux106)
 watched-or({diseq(avatarCurrentCol_00001,4),diseq(avatarCurrentRow_00001,blocksCurrentRow_00001_00001)})
-watched-or({w-literal(aux84,0),diseq(1,aux84)})
-watched-or({diseq(2,aux100),diseq(aux94,2),w-literal(aux82,1)})
-watched-or({w-literal(aux83,1),diseq(aux95,4),diseq(blocksCurrentRow_00001_00001,aux99)})
-weightedsumleq([5,1,1],[avatarCurrentRow_00001,avatarCurrentCol_00001,-13],aux101)
-weightedsumgeq([5,1,1],[avatarCurrentRow_00001,avatarCurrentCol_00001,-13],aux101)
-sumleq([moveRow_00000,3],aux102)
-sumgeq([moveRow_00000,3],aux102)
-sumleq([moveCol_00001,4],aux103)
-sumgeq([moveCol_00001,4],aux103)
-weightedsumleq([2,1],[moveCol_00001,4],aux104)
-weightedsumgeq([2,1],[moveCol_00001,4],aux104)
-sumleq([moveRow_00001,2],aux105)
-sumgeq([moveRow_00001,2],aux105)
-weightedsumleq([2,1],[moveRow_00001,2],aux106)
-weightedsumgeq([2,1],[moveRow_00001,2],aux106)
-weightedsumleq([5,1,1],[avatarCurrentRow_00003,avatarCurrentCol_00003,-13],aux107)
-weightedsumgeq([5,1,1],[avatarCurrentRow_00003,avatarCurrentCol_00003,-13],aux107)
-sumleq([moveRow_00002,blocksCurrentRow_00001_00001],aux109)
-sumgeq([moveRow_00002,blocksCurrentRow_00001_00001],aux109)
-weightedsumleq([1,5],[-15,blocksCurrentRow_00001_00001],aux110)
-weightedsumgeq([1,5],[-15,blocksCurrentRow_00001_00001],aux110)
-weightedsumleq([1,5],[-15,blocksCurrentRow_00001_00001],aux112)
-weightedsumgeq([1,5],[-15,blocksCurrentRow_00001_00001],aux112)
+watched-or({diseq(aux101,2),diseq(aux102,2),w-literal(aux87,1)})
+watched-or({diseq(aux101,4),diseq(aux102,4),w-literal(aux87,1)})
+watched-or({diseq(4,avatarCurrentCol_00003),w-literal(aux110,1),watched-and({w-literal(moveCol_00002,0),w-literal(aux115,4)})})
+watched-or({diseq(avatarCurrentRow_00001,3),watched-and({gaceq(aux116,blocksCurrentRow_00001_00001),w-literal(moveCol_00000,0)}),diseq(4,avatarCurrentCol_00001)})
+reify(watched-or({diseq(aux93,blocksCurrentRow_00001_00001),diseq(4,aux92)}), aux82)
+watched-or({diseq(aux117,4),diseq(aux118,4),diseq(aux119,blocksCurrentRow_00001_00001),diseq(aux120,blocksCurrentRow_00001_00001)})
+ineq(1, aux109, 0)
+ineq(1, aux108, 0)
+watched-or({diseq(1,aux106),w-literal(aux106,0)})
+watched-or({watched-and({w-literal(moveRow_00000,1),w-literal(moveCol_00000,0)}),w-literal(blocksCurrentRow_00001_00001,3)})
+ineq(1, aux107, 0)
+diseq(0,aux107)
+watched-or({w-literal(aux86,1),diseq(aux97,blocksCurrentRow_00001_00001),diseq(4,aux98)})
+watched-or({w-literal(aux86,1),diseq(2,aux97),diseq(2,aux98)})
+watched-or({w-literal(blocksCurrentRow_00001_00001,4),watched-and({w-literal(moveCol_00002,0),w-literal(aux110,0)})})
+reify(watched-or({diseq(2,aux92),diseq(2,aux93)}), aux83)
+reify(watched-or({diseq(2,aux94),diseq(2,aux95)}), aux84)
+reify(watched-or({diseq(4,aux94),diseq(4,aux95)}), aux85)
+reify(watched-and({w-literal(aux82,1),w-literal(aux83,1)}), aux86)
+reify(watched-and({w-literal(aux84,1),w-literal(aux85,1)}), aux87)
+diseq(aux109,0)
+diseq(aux108,0)
+ineq(1, aux106, 0)
 weightedsumleq([-1,1],[moveRow_00001,moveCol_00001],1)
 weightedsumgeq([-1,1],[moveRow_00001,moveCol_00001],1)
 weightedsumleq([1,-1],[moveRow_00000,moveCol_00000],1)
 weightedsumgeq([1,-1],[moveRow_00000,moveCol_00000],1)
 weightedsumleq([1,-1],[moveRow_00002,moveCol_00002],1)
 weightedsumgeq([1,-1],[moveRow_00002,moveCol_00002],1)
-sumleq([moveRow_00000,2],avatarCurrentRow_00001)
-sumgeq([moveRow_00000,2],avatarCurrentRow_00001)
-sumleq([moveCol_00002,4],avatarCurrentCol_00003)
-sumgeq([moveCol_00002,4],avatarCurrentCol_00003)
-sumleq([moveCol_00000,4],avatarCurrentCol_00001)
-sumgeq([moveCol_00000,4],avatarCurrentCol_00001)
-sumleq([avatarCurrentCol_00001,moveCol_00001],4)
-sumgeq([avatarCurrentCol_00001,moveCol_00001],4)
-weightedsumleq([1,2],[avatarCurrentRow_00003,moveRow_00002],aux91)
-weightedsumgeq([1,2],[avatarCurrentRow_00003,moveRow_00002],aux91)
-weightedsumleq([1,2],[avatarCurrentRow_00001,moveRow_00000],aux92)
-weightedsumgeq([1,2],[avatarCurrentRow_00001,moveRow_00000],aux92)
-sumleq([avatarCurrentRow_00001,moveRow_00001],2)
-sumgeq([avatarCurrentRow_00001,moveRow_00001],2)
-sumleq([avatarCurrentCol_00003,moveCol_00002],aux94)
-sumgeq([avatarCurrentCol_00003,moveCol_00002],aux94)
-sumleq([avatarCurrentCol_00001,moveCol_00000],aux95)
-sumgeq([avatarCurrentCol_00001,moveCol_00000],aux95)
+sumleq([moveRow_00002,blocksCurrentRow_00001_00001],aux115)
+sumgeq([moveRow_00002,blocksCurrentRow_00001_00001],aux115)
+sumleq([moveRow_00000,3],aux116)
+sumgeq([moveRow_00000,3],aux116)
+sumleq([moveCol_00001,4],aux117)
+sumgeq([moveCol_00001,4],aux117)
+weightedsumleq([2,1],[moveCol_00001,4],aux118)
+weightedsumgeq([2,1],[moveCol_00001,4],aux118)
+sumleq([moveRow_00001,2],aux119)
+sumgeq([moveRow_00001,2],aux119)
+weightedsumleq([2,1],[moveRow_00001,2],aux120)
+weightedsumgeq([2,1],[moveRow_00001,2],aux120)
+weightedsumleq([1,5],[-15,blocksCurrentRow_00001_00001],aux105)
+weightedsumgeq([1,5],[-15,blocksCurrentRow_00001_00001],aux105)
+weightedsumleq([5,1,1],[avatarCurrentRow_00001,avatarCurrentCol_00001,-13],aux88)
+weightedsumgeq([5,1,1],[avatarCurrentRow_00001,avatarCurrentCol_00001,-13],aux88)
 sumleq([moveRow_00002,2],avatarCurrentRow_00003)
 sumgeq([moveRow_00002,2],avatarCurrentRow_00003)
-weightedsumleq([1,2],[avatarCurrentCol_00001,moveCol_00000],aux97)
-weightedsumgeq([1,2],[avatarCurrentCol_00001,moveCol_00000],aux97)
-weightedsumleq([1,2],[avatarCurrentCol_00003,moveCol_00002],aux98)
-weightedsumgeq([1,2],[avatarCurrentCol_00003,moveCol_00002],aux98)
-sumleq([avatarCurrentRow_00001,moveRow_00000],aux99)
-sumgeq([avatarCurrentRow_00001,moveRow_00000],aux99)
-sumleq([avatarCurrentRow_00003,moveRow_00002],aux100)
-sumgeq([avatarCurrentRow_00003,moveRow_00002],aux100)
+sumleq([avatarCurrentCol_00001,moveCol_00001],4)
+sumgeq([avatarCurrentCol_00001,moveCol_00001],4)
+sumleq([avatarCurrentRow_00001,moveRow_00001],2)
+sumgeq([avatarCurrentRow_00001,moveRow_00001],2)
+weightedsumleq([1,2],[avatarCurrentCol_00001,moveCol_00000],aux92)
+weightedsumgeq([1,2],[avatarCurrentCol_00001,moveCol_00000],aux92)
+weightedsumleq([1,2],[avatarCurrentRow_00001,moveRow_00000],aux93)
+weightedsumgeq([1,2],[avatarCurrentRow_00001,moveRow_00000],aux93)
+weightedsumleq([1,2],[avatarCurrentRow_00003,moveRow_00002],aux94)
+weightedsumgeq([1,2],[avatarCurrentRow_00003,moveRow_00002],aux94)
+weightedsumleq([1,2],[avatarCurrentCol_00003,moveCol_00002],aux95)
+weightedsumgeq([1,2],[avatarCurrentCol_00003,moveCol_00002],aux95)
+sumleq([moveCol_00002,4],avatarCurrentCol_00003)
+sumgeq([moveCol_00002,4],avatarCurrentCol_00003)
+sumleq([avatarCurrentRow_00001,moveRow_00000],aux97)
+sumgeq([avatarCurrentRow_00001,moveRow_00000],aux97)
+sumleq([avatarCurrentCol_00001,moveCol_00000],aux98)
+sumgeq([avatarCurrentCol_00001,moveCol_00000],aux98)
+sumleq([moveCol_00000,4],avatarCurrentCol_00001)
+sumgeq([moveCol_00000,4],avatarCurrentCol_00001)
+sumleq([moveRow_00000,2],avatarCurrentRow_00001)
+sumgeq([moveRow_00000,2],avatarCurrentRow_00001)
+sumleq([avatarCurrentRow_00003,moveRow_00002],aux101)
+sumgeq([avatarCurrentRow_00003,moveRow_00002],aux101)
+sumleq([avatarCurrentCol_00003,moveCol_00002],aux102)
+sumgeq([avatarCurrentCol_00003,moveCol_00002],aux102)
+weightedsumleq([5,1,1],[avatarCurrentRow_00003,avatarCurrentCol_00003,-13],aux103)
+weightedsumgeq([5,1,1],[avatarCurrentRow_00003,avatarCurrentCol_00003,-13],aux103)
 **EOF**
