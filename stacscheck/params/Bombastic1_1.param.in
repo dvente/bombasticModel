@@ -14,11 +14,12 @@ letting gridInit be [[0, 0, 0, 0, 0],
       
 letting avatarInitRow be 2
 letting avatarInitCol be 2
+
 letting numBlocks be 1
+
 letting blocksInitRow be [2]
 letting blocksInitCol be [3]
 letting blocksGoalRow be [2]
 letting blocksGoalCol be [4]
 
 letting steps be 1
-

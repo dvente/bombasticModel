@@ -20,7 +20,9 @@ letting gridInit be [[0, 0, 0, 0, 0, 0],
       
 letting avatarInitRow be 2
 letting avatarInitCol be 2
+
 letting numBlocks be 2
+
 letting blocksInitRow be [2, 3]
 letting blocksInitCol be [4, 4]
 letting blocksGoalRow be [2, 3]
