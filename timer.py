@@ -24,7 +24,7 @@ for root, dirs, files in os.walk("."):
 				print(file,flag)
 				subOut = sub.check_output("TIMEFORMAT='%U'; { time ../savilerow Bombastic.eprime "+filePath+" -run-solver "+flag+"; } 2>&1",shell=True)
 				lineOut = str(filePath)
-				lineOut += " , " + flag[-1] + ", "
+				lineOut += " , " + flag[-1]
 				if solutionPatern.search(subOut):
 					lineOut += ", true, "
 					solutionOutput = sub.check_output("cat " + filePath + ".solution",shell=True)
