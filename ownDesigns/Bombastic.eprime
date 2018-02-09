@@ -155,7 +155,7 @@ forAll t : int(0..steps) .
 				blocksCurrentCol[t,block] != blocksCurrentCol[t,sndBlock]
 				\/ blocksCurrentRow[t,block] != blocksCurrentRow[t,sndBlock],
 
-$can only move one block at a time
+$ $can only move one block at a time
 forAll t : int(1..steps) .
   forAll blockNumb : int(1..numBlocks) .
     (avatarCurrentCol[t] + moveCol[t] = blocksCurrentCol[t, blockNumb] 
