@@ -11,7 +11,7 @@ logFile = "compTimes.log"
 
 optFlags = ['-O' + str(x) for x in range(4)]
 
-sub.call("rm -f " + logFile + " && touch " + logFile + " && echo \"file, optLevel, foundSolution, lenthOfSolution, compute time\" >> "+logFile,shell=True)
+sub.call("rm -f " + logFile + " && touch " + logFile + " && echo \"file,optLevel,foundSolution,lenthOfSolution,compTime\" >> "+logFile,shell=True)
 
 
 for root, dirs, files in os.walk("."):
@@ -26,14 +26,14 @@ for root, dirs, files in os.walk("."):
 				lineOut = str(filePath)
 				lineOut += " , " + flag[-1]
 				if solutionPatern.search(subOut):
-					lineOut += ", true, "
+					lineOut += ",true, "
 					solutionOutput = sub.check_output("cat " + filePath + ".solution",shell=True)
 					solutionSearch = solutionLengthPatern.search(solutionOutput)
 					solutionLine = solutionSearch.group()
 					solutionLength = len(re.findall(',',solutionLine)) + 1
-					lineOut += str(solutionLength) + ", "
+					lineOut += str(solutionLength) + ","
 				else:
-					lineOut += ", false, inf, "
+					lineOut += ",false,NaN, "
 				match = timePatern.search(subOut)
 				lineOut += match.group(0)
 				sub.call("echo \"" + lineOut + "\" >> "+logFile,shell=True)
