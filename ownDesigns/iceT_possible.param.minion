@@ -5,12 +5,12 @@ MINION 3
 # CSETopLevel_number = 0
 # CSETopLevel_eliminated_expressions = 0
 # CSETopLevel_total_size = 0
-# AC-CSE-Or_number = 4
-# AC-CSE-Or_eliminated_expressions = 8
-# AC-CSE-Or_total_size = 84
-# AC-CSE-And_number = 2
-# AC-CSE-And_eliminated_expressions = 4
-# AC-CSE-And_total_size = 6
+# AC-CSE-Or_number = 0
+# AC-CSE-Or_eliminated_expressions = 0
+# AC-CSE-Or_total_size = 0
+# AC-CSE-And_number = 0
+# AC-CSE-And_eliminated_expressions = 0
+# AC-CSE-And_total_size = 0
 # AC-CSE-Sum_number = 28
 # AC-CSE-Sum_eliminated_expressions = 78
 # AC-CSE-Sum_total_size = 87
@@ -78,48 +78,42 @@ DISCRETE gridCurrent_00004_00002_00003 #
 {0..2}
 DISCRETE gridCurrent_00004_00002_00004 #
 {0..2}
-BOOL aux82 #AC-CSE-Generic-\/: 2 occurrences of: (((avatarCurrentCol_00003 + 2*moveCol_00002) != blocksCurrentCol_00003_00000) \/ (blocksCurrentRow_00003_00000 != (avatarCurrentRow_00003 + 2*moveRow_00002)))
-BOOL aux83 #AC-CSE-Generic-\/: 2 occurrences of: ((3 != (avatarCurrentRow_00003 + 2*moveRow_00002)) \/ ((avatarCurrentCol_00003 + 2*moveCol_00002) != blocksCurrentCol_00003_00001))
-BOOL aux84 #AC-CSE-Generic-\/: 2 occurrences of: ((3 != (avatarCurrentRow_00001 + 2*moveRow_00000)) \/ ((avatarCurrentCol_00001 + 2*moveCol_00000) != blocksCurrentCol_00001_00001))
-BOOL aux85 #AC-CSE-Generic-\/: 2 occurrences of: ((2 != (avatarCurrentRow_00001 + 2*moveRow_00000)) \/ ((avatarCurrentCol_00001 + 2*moveCol_00000) != 3))
-BOOL aux86 #AC-CSE-Generic-/\: 2 occurrences of: (aux82 /\ aux83)
-BOOL aux87 #AC-CSE-Generic-/\: 2 occurrences of: (aux84 /\ aux85)
-DISCRETE aux92 #AC-CSE-Generic-+: 4 occurrences of: (8*avatarCurrentRow_00001 + avatarCurrentCol_00001-20)
+DISCRETE aux86 #AC-CSE-Generic-+: 4 occurrences of: (8*avatarCurrentRow_00001 + avatarCurrentCol_00001-20)
 {0..10}
-DISCRETE aux93 #AC-CSE-Generic-+: 4 occurrences of: (8*avatarCurrentRow_00003 + avatarCurrentCol_00003-19)
+DISCRETE aux87 #AC-CSE-Generic-+: 4 occurrences of: (8*avatarCurrentRow_00003 + avatarCurrentCol_00003-19)
 {0..9}
-DISCRETE aux96 #AC-CSE-Generic-+: 4 occurrences of: (avatarCurrentCol_00002-3)
+DISCRETE aux90 #AC-CSE-Generic-+: 4 occurrences of: (avatarCurrentCol_00002-3)
 {0..2}
-DISCRETE aux97 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00003 + 2*moveCol_00002)
+DISCRETE aux93 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00003 + moveRow_00002)
+{2..4}
+DISCRETE aux94 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00003 + 2*moveCol_00002)
 {1..6}
-DISCRETE aux98 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00003 + 2*moveRow_00002)
+DISCRETE aux95 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00003 + 2*moveRow_00002)
 {2..5}
+DISCRETE aux96 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00003 + moveCol_00002)
+{2..5}
+DISCRETE aux97 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00001 + moveRow_00000)
+{2..4}
+DISCRETE aux98 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00001 + moveCol_00000)
+{3..7}
 DISCRETE aux99 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00001 + 2*moveRow_00000)
 {2..5}
 DISCRETE aux100 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00001 + 2*moveCol_00000)
 {2..8}
-DISCRETE aux101 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00003 + moveRow_00002)
-{2..4}
-DISCRETE aux102 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00003 + moveCol_00002)
-{2..5}
-DISCRETE aux105 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentRow_00001 + moveRow_00000)
-{2..4}
-DISCRETE aux106 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00001 + moveCol_00000)
-{3..7}
-BOOL aux107 #AC-CSE-Generic-+: 2 occurrences of: (-4 + blocksCurrentCol_00003_00001)
-DISCRETE aux108 #AC-CSE-Generic-+: 2 occurrences of: (-2 + blocksCurrentCol_00004_00000)
+BOOL aux101 #AC-CSE-Generic-+: 2 occurrences of: (-4 + blocksCurrentCol_00003_00001)
+DISCRETE aux102 #AC-CSE-Generic-+: 2 occurrences of: (-2 + blocksCurrentCol_00004_00000)
 {0..5}
-BOOL aux109 #AC-CSE-Generic-+: 2 occurrences of: (blocksCurrentCol_00002_00001-4)
-DISCRETE aux110 #AC-CSE-Generic-+: 2 occurrences of: (8*blocksCurrentRow_00003_00000-17 + blocksCurrentCol_00003_00000)
+BOOL aux103 #AC-CSE-Generic-+: 2 occurrences of: (blocksCurrentCol_00002_00001-4)
+BOOL aux104 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00004-4)
+DISCRETE aux105 #AC-CSE-Generic-+: 2 occurrences of: (8*blocksCurrentRow_00003_00000-17 + blocksCurrentCol_00003_00000)
 {0..15}
-DISCRETE aux111 #AC-CSE-Generic-+: 2 occurrences of: (-2 + blocksCurrentCol_00004_00001)
+DISCRETE aux106 #AC-CSE-Generic-+: 2 occurrences of: (-2 + blocksCurrentCol_00004_00001)
 {0..5}
-BOOL aux112 #AC-CSE-Generic-+: 2 occurrences of: (blocksCurrentCol_00001_00001-4)
-BOOL aux113 #AC-CSE-Generic-+: 2 occurrences of: (avatarCurrentCol_00004-4)
-DISCRETE aux114 #AC-CSE-Generic-+: 2 occurrences of: (blocksCurrentCol_00004_00000 + blocksCurrentCol_00004_00001)
+DISCRETE aux107 #AC-CSE-Generic-+: 2 occurrences of: (blocksCurrentCol_00004_00000 + blocksCurrentCol_00004_00001)
 {4..14}
-DISCRETE aux115 #AC-CSE-Generic-+: 2 occurrences of: (blocksCurrentCol_00002_00000-2)
+DISCRETE aux108 #AC-CSE-Generic-+: 2 occurrences of: (blocksCurrentCol_00002_00000-2)
 {0..5}
+BOOL aux109 #AC-CSE-Generic-+: 2 occurrences of: (blocksCurrentCol_00001_00001-4)
 **TUPLELIST**
 gridInit 4 8
 0 0 0 0 0 0 0 0 
@@ -135,6 +129,6 @@ ALIAS blocksGoalCol[2]=[2, 7]
 **SEARCH**
 PRINT[[moveRow_00000],[moveRow_00001],[moveRow_00002],[moveRow_00003],[moveCol_00000],[moveCol_00001],[moveCol_00002],[moveCol_00003],[avatarCurrentRow_00001],[avatarCurrentRow_00003],[avatarCurrentCol_00001],[avatarCurrentCol_00002],[avatarCurrentCol_00003],[avatarCurrentCol_00004],[blocksCurrentRow_00003_00000],[blocksCurrentCol_00001_00001],[blocksCurrentCol_00002_00000],[blocksCurrentCol_00002_00001],[blocksCurrentCol_00003_00000],[blocksCurrentCol_00004_00000],[blocksCurrentCol_00004_00001],[gridCurrent_00002_00001_00003],[gridCurrent_00002_00002_00003],[gridCurrent_00002_00002_00004],[gridCurrent_00003_00001_00003],[gridCurrent_00003_00002_00003],[gridCurrent_00003_00002_00004],[gridCurrent_00004_00001_00003],[gridCurrent_00004_00002_00003],[gridCurrent_00004_00002_00004]]
 VARORDER STATIC [moveRow_00000, moveRow_00001, moveRow_00002, moveRow_00003, moveCol_00000, moveCol_00001, moveCol_00002, moveCol_00003, 2, avatarCurrentRow_00001, 2, avatarCurrentRow_00003, 3, 5, avatarCurrentCol_00001, avatarCurrentCol_00002, avatarCurrentCol_00003, avatarCurrentCol_00004, 2, 3, 2, 3, 2, 3, blocksCurrentRow_00003_00000, 3, 2, 2, 3, 4, 3, blocksCurrentCol_00001_00001, blocksCurrentCol_00002_00000, blocksCurrentCol_00002_00001, blocksCurrentCol_00003_00000, avatarCurrentCol_00004, blocksCurrentCol_00004_00000, blocksCurrentCol_00004_00001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1, 2, 2, 2, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1, 2, 2, 2, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, gridCurrent_00002_00001_00003, 2, 2, 2, 0, 0, 0, 0, gridCurrent_00002_00002_00003, gridCurrent_00002_00002_00004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, gridCurrent_00003_00001_00003, 2, 2, 2, 0, 0, 0, 0, gridCurrent_00003_00002_00003, gridCurrent_00003_00002_00004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, gridCurrent_00004_00001_00003, 2, 2, 2, 0, 0, 0, 0, gridCurrent_00004_00002_00003, gridCurrent_00004_00002_00004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-VARORDER AUX [moveRow_00000,moveRow_00001,moveRow_00002,moveRow_00003,moveCol_00000,moveCol_00001,moveCol_00002,moveCol_00003,avatarCurrentRow_00001,avatarCurrentRow_00003,avatarCurrentCol_00001,avatarCurrentCol_00002,avatarCurrentCol_00003,avatarCurrentCol_00004,blocksCurrentRow_00003_00000,blocksCurrentCol_00001_00001,blocksCurrentCol_00002_00000,blocksCurrentCol_00002_00001,blocksCurrentCol_00003_00000,blocksCurrentCol_00004_00000,blocksCurrentCol_00004_00001,gridCurrent_00002_00001_00003,gridCurrent_00002_00002_00003,gridCurrent_00002_00002_00004,gridCurrent_00003_00001_00003,gridCurrent_00003_00002_00003,gridCurrent_00003_00002_00004,gridCurrent_00004_00001_00003,gridCurrent_00004_00002_00003,gridCurrent_00004_00002_00004,aux82,aux83,aux84,aux85,aux86,aux87,aux92,aux93,aux96,aux97,aux98,aux99,aux100,aux101,aux102,aux105,aux106,aux107,aux108,aux109,aux110,aux111,aux112,aux113,aux114,aux115]
+VARORDER AUX [moveRow_00000,moveRow_00001,moveRow_00002,moveRow_00003,moveCol_00000,moveCol_00001,moveCol_00002,moveCol_00003,avatarCurrentRow_00001,avatarCurrentRow_00003,avatarCurrentCol_00001,avatarCurrentCol_00002,avatarCurrentCol_00003,avatarCurrentCol_00004,blocksCurrentRow_00003_00000,blocksCurrentCol_00001_00001,blocksCurrentCol_00002_00000,blocksCurrentCol_00002_00001,blocksCurrentCol_00003_00000,blocksCurrentCol_00004_00000,blocksCurrentCol_00004_00001,gridCurrent_00002_00001_00003,gridCurrent_00002_00002_00003,gridCurrent_00002_00002_00004,gridCurrent_00003_00001_00003,gridCurrent_00003_00002_00003,gridCurrent_00003_00002_00004,gridCurrent_00004_00001_00003,gridCurrent_00004_00002_00003,gridCurrent_00004_00002_00004,aux86,aux87,aux90,aux93,aux94,aux95,aux96,aux97,aux98,aux99,aux100,aux101,aux102,aux103,aux104,aux105,aux106,aux107,aux108,aux109]
 **CONSTRAINTS**
 false()**EOF**
