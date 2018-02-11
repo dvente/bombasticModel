@@ -1,105 +1,113 @@
-file,optLevel,foundSolution,lenthOfSolution,compTime
-./Bombastic5_10.param , 0,true, 10,6.594
-./Bombastic5_10.param , 1,true, 10,5.914
-./Bombastic5_10.param , 2,true, 10,6.876
-./Bombastic5_10.param , 3,true, 10,8.244
-./Bombastic8_15.param , 0,false,NaN, 237.177
-./Bombastic8_15.param , 1,false,NaN, 7.775
-./Bombastic8_15.param , 2,false,NaN, 10.932
-./Bombastic8_15.param , 3,false,NaN, 13.195
-./Bombastic7_15.param , 0,true, 15,64.771
-./Bombastic7_15.param , 1,true, 15,7.166
-./Bombastic7_15.param , 2,true, 15,9.190
-./Bombastic7_15.param , 3,true, 15,11.875
-./Bombastic9_17.param , 0,true, 17,942.947
-./Bombastic9_17.param , 1,true, 17,12.709
-./Bombastic9_17.param , 2,true, 17,14.452
-./Bombastic9_17.param , 3,true, 17,426.766
-./Bombastic7_14.param , 0,false,NaN, 34.781
-./Bombastic7_14.param , 1,false,NaN, 7.747
-./Bombastic7_14.param , 2,false,NaN, 7.805
-./Bombastic7_14.param , 3,false,NaN, 9.792
-./Bombastic3_5.param , 0,false,NaN, 4.364
-./Bombastic3_5.param , 1,false,NaN, 3.735
-./Bombastic3_5.param , 2,false,NaN, 4.438
-./Bombastic3_5.param , 3,false,NaN, 4.638
-./Bombastic9_16.param , 0,false,NaN, 390.239
-./Bombastic9_16.param , 1,false,NaN, 8.243
-./Bombastic9_16.param , 2,false,NaN, 12.236
-./Bombastic9_16.param , 3,false,NaN, 184.309
-./Bombastic3_6.param , 0,true, 6,4.254
-./Bombastic3_6.param , 1,true, 6,4.570
-./Bombastic3_6.param , 2,true, 6,4.795
-./Bombastic3_6.param , 3,true, 6,5.110
-./Bombastic8_16.param , 0,true, 16,526.372
-./Bombastic8_16.param , 1,true, 16,9.983
-./Bombastic8_16.param , 2,true, 16,12.301
-./Bombastic8_16.param , 3,true, 16,248.210
-./Bombastic1_1.param , 0,true, 1,2.606
-./Bombastic1_1.param , 1,true, 1,1.945
-./Bombastic1_1.param , 2,true, 1,2.376
-./Bombastic1_1.param , 3,true, 1,2.429
-./Bombastic2_3.param , 0,true, 3,3.808
-./Bombastic2_3.param , 1,true, 3,3.173
-./Bombastic2_3.param , 2,true, 3,3.777
-./Bombastic2_3.param , 3,true, 3,3.631
-./Bombastic6_12.param , 0,true, 12,7.494
-./Bombastic6_12.param , 1,true, 12,6.707
-./Bombastic6_12.param , 2,true, 12,7.601
-./Bombastic6_12.param , 3,true, 12,9.518
-./Bombastic4_8.param , 0,true, 8,4.467
-./Bombastic4_8.param , 1,true, 8,5.407
-./Bombastic4_8.param , 2,true, 8,7.320
-./Bombastic4_8.param , 3,true, 8,7.322
-./Bombastic2_2.param , 0,false,NaN, 3.062
-./Bombastic2_2.param , 1,false,NaN, 2.729
-./Bombastic2_2.param , 2,false,NaN, 3.252
-./Bombastic2_2.param , 3,false,NaN, 3.200
-./Bombastic6_11.param , 0,false,NaN, 6.119
-./Bombastic6_11.param , 1,false,NaN, 6.480
-./Bombastic6_11.param , 2,false,NaN, 7.171
-./Bombastic6_11.param , 3,false,NaN, 8.215
-./Bombastic4_7.param , 0,false,NaN, 4.450
-./Bombastic4_7.param , 1,false,NaN, 4.958
-./Bombastic4_7.param , 2,false,NaN, 6.691
-./Bombastic4_7.param , 3,false,NaN, 8.381
-./Bombastic5_9.param , 0,false,NaN, 5.052
-./Bombastic5_9.param , 1,false,NaN, 5.376
-./Bombastic5_9.param , 2,false,NaN, 7.213
-./Bombastic5_9.param , 3,false,NaN, 7.906
-./ownDesigns/T_possilbe.param , 0,true, 4,3.766
-./ownDesigns/T_possilbe.param , 1,true, 4,4.127
-./ownDesigns/T_possilbe.param , 2,true, 4,4.496
-./ownDesigns/T_possilbe.param , 3,true, 4,4.732
-./ownDesigns/iceT_impossible.param , 0,false,NaN, 3.807
-./ownDesigns/iceT_impossible.param , 1,false,NaN, 3.079
-./ownDesigns/iceT_impossible.param , 2,false,NaN, 3.717
-./ownDesigns/iceT_impossible.param , 3,false,NaN, 4.022
-./ownDesigns/WideOpen_possible.param , 0,true, 17,2995.745
-./ownDesigns/WideOpen_possible.param , 1,true, 17,17.180
-./ownDesigns/WideOpen_possible.param , 2,true, 17,19.070
-./ownDesigns/WideOpen_possible.param , 3,true, 17,1303.193
-./ownDesigns/WideOpen_impossible.param , 0,false,NaN, 3607.217
-./ownDesigns/WideOpen_impossible.param , 1,false,NaN, 13.647
-./ownDesigns/WideOpen_impossible.param , 2,false,NaN, 14.078
-./ownDesigns/WideOpen_impossible.param , 3,false,NaN, 2082.472
-./ownDesigns/2Blocks_impossible.param , 0,false,NaN, 2.515
-./ownDesigns/2Blocks_impossible.param , 1,false,NaN, 2.151
-./ownDesigns/2Blocks_impossible.param , 2,false,NaN, 2.715
-./ownDesigns/2Blocks_impossible.param , 3,false,NaN, 2.592
-./ownDesigns/iceT_possible.param , 0,false,NaN, 3.778
-./ownDesigns/iceT_possible.param , 1,false,NaN, 4.057
-./ownDesigns/iceT_possible.param , 2,false,NaN, 4.279
-./ownDesigns/iceT_possible.param , 3,false,NaN, 4.598
-./ownDesigns/2Blocks_possible.param , 0,true, 3,3.630
-./ownDesigns/2Blocks_possible.param , 1,true, 3,3.692
-./ownDesigns/2Blocks_possible.param , 2,true, 3,5.023
-./ownDesigns/2Blocks_possible.param , 3,true, 3,5.071
-./ownDesigns/L_possible.param , 0,true, 3,3.910
-./ownDesigns/L_possible.param , 1,true, 3,3.671
-./ownDesigns/L_possible.param , 2,true, 3,4.440
-./ownDesigns/L_possible.param , 3,true, 3,5.012
-./ownDesigns/L_impossible.param , 0,false,NaN, 3.628
-./ownDesigns/L_impossible.param , 1,false,NaN, 3.500
-./ownDesigns/L_impossible.param , 2,false,NaN, 4.432
-./ownDesigns/L_impossible.param , 3,false,NaN, 4.057
+file,optLevel,foundSolution,solutionLength,compTime
+./Bombastic5_10.param,0,true,10,5.639
+./Bombastic5_10.param,1,true,10,6.123
+./Bombastic5_10.param,2,true,10,7.316
+./Bombastic5_10.param,3,true,10,8.477
+./Bombastic8_15.param,0,false,15,234.150
+./Bombastic8_15.param,1,false,15,7.801
+./Bombastic8_15.param,2,false,15,11.543
+./Bombastic8_15.param,3,false,15,11.180
+./Bombastic7_15.param,0,true,15,64.481
+./Bombastic7_15.param,1,true,15,6.859
+./Bombastic7_15.param,2,true,15,9.382
+./Bombastic7_15.param,3,true,15,10.641
+./Bombastic9_17.param,0,true,17,948.484
+./Bombastic9_17.param,1,true,17,11.486
+./Bombastic9_17.param,2,true,17,13.563
+./Bombastic9_17.param,3,true,17,429.395
+./Bombastic7_14.param,0,false,14,34.923
+./Bombastic7_14.param,1,false,14,7.093
+./Bombastic7_14.param,2,false,14,8.607
+./Bombastic7_14.param,3,false,14,10.150
+./Bombastic3_5.param,0,false,5,3.680
+./Bombastic3_5.param,1,false,5,3.848
+./Bombastic3_5.param,2,false,5,4.373
+./Bombastic3_5.param,3,false,5,4.725
+./Bombastic9_16.param,0,false,16,396.840
+./Bombastic9_16.param,1,false,16,8.423
+./Bombastic9_16.param,2,false,16,11.320
+./Bombastic9_16.param,3,false,16,186.902
+./Bombastic3_6.param,0,true,6,4.026
+./Bombastic3_6.param,1,true,6,4.412
+./Bombastic3_6.param,2,true,6,5.206
+./Bombastic3_6.param,3,true,6,5.486
+./Bombastic8_16.param,0,true,16,525.086
+./Bombastic8_16.param,1,true,16,10.034
+./Bombastic8_16.param,2,true,16,11.818
+./Bombastic8_16.param,3,true,16,247.115
+./Bombastic1_1.param,0,true,1,2.616
+./Bombastic1_1.param,1,true,1,2.169
+./Bombastic1_1.param,2,true,1,2.386
+./Bombastic1_1.param,3,true,1,2.755
+./Bombastic2_3.param,0,true,3,3.613
+./Bombastic2_3.param,1,true,3,3.326
+./Bombastic2_3.param,2,true,3,3.574
+./Bombastic2_3.param,3,true,3,3.406
+./Bombastic6_12.param,0,true,12,7.936
+./Bombastic6_12.param,1,true,12,6.362
+./Bombastic6_12.param,2,true,12,7.870
+./Bombastic6_12.param,3,true,12,9.537
+./Bombastic4_8.param,0,true,8,4.606
+./Bombastic4_8.param,1,true,8,5.010
+./Bombastic4_8.param,2,true,8,5.823
+./Bombastic4_8.param,3,true,8,7.403
+./Bombastic2_2.param,0,false,2,2.868
+./Bombastic2_2.param,1,false,2,2.563
+./Bombastic2_2.param,2,false,2,3.024
+./Bombastic2_2.param,3,false,2,3.336
+./Bombastic6_11.param,0,false,11,6.397
+./Bombastic6_11.param,1,false,11,5.608
+./Bombastic6_11.param,2,false,11,7.508
+./Bombastic6_11.param,3,false,11,8.723
+./Bombastic4_7.param,0,false,7,4.634
+./Bombastic4_7.param,1,false,7,5.240
+./Bombastic4_7.param,2,false,7,5.592
+./Bombastic4_7.param,3,false,7,6.888
+./Bombastic5_9.param,0,false,9,5.028
+./Bombastic5_9.param,1,false,9,6.025
+./Bombastic5_9.param,2,false,9,6.594
+./Bombastic5_9.param,3,false,9,8.070
+./ownDesigns/T_possilbe.param,0,true,4,4.079
+./ownDesigns/T_possilbe.param,1,true,4,4.011
+./ownDesigns/T_possilbe.param,2,true,4,4.583
+./ownDesigns/T_possilbe.param,3,true,4,4.871
+./ownDesigns/iceT_impossible.param,0,false,4,4.007
+./ownDesigns/iceT_impossible.param,1,false,4,3.816
+./ownDesigns/iceT_impossible.param,2,false,4,3.830
+./ownDesigns/iceT_impossible.param,3,false,4,4.007
+./ownDesigns/WideOpen_possible.param,0,true,10,5.220
+./ownDesigns/WideOpen_possible.param,1,true,10,5.230
+./ownDesigns/WideOpen_possible.param,2,true,10,6.498
+./ownDesigns/WideOpen_possible.param,3,true,10,7.774
+./ownDesigns/WideOpen_impossible.param,0,true,9,4.707
+./ownDesigns/WideOpen_impossible.param,1,true,9,5.322
+./ownDesigns/WideOpen_impossible.param,2,true,9,5.927
+./ownDesigns/WideOpen_impossible.param,3,true,9,7.569
+./ownDesigns/BigComplex_possible.param,0,true,17,2990.551
+./ownDesigns/BigComplex_possible.param,1,true,17,17.503
+./ownDesigns/BigComplex_possible.param,2,true,17,19.202
+./ownDesigns/BigComplex_possible.param,3,true,17,1308.048
+./ownDesigns/2Blocks_impossible.param,0,false,1,2.854
+./ownDesigns/2Blocks_impossible.param,1,false,1,2.465
+./ownDesigns/2Blocks_impossible.param,2,false,1,2.908
+./ownDesigns/2Blocks_impossible.param,3,false,1,2.686
+./ownDesigns/iceT_possible.param,0,false,4,3.539
+./ownDesigns/iceT_possible.param,1,false,4,3.904
+./ownDesigns/iceT_possible.param,2,false,4,4.104
+./ownDesigns/iceT_possible.param,3,false,4,4.538
+./ownDesigns/2Blocks_possible.param,0,true,3,3.647
+./ownDesigns/2Blocks_possible.param,1,true,3,3.721
+./ownDesigns/2Blocks_possible.param,2,true,3,4.823
+./ownDesigns/2Blocks_possible.param,3,true,3,4.694
+./ownDesigns/BigComplex_impossible.param,0,false,16,3607.617
+./ownDesigns/BigComplex_impossible.param,1,false,16,13.696
+./ownDesigns/BigComplex_impossible.param,2,false,16,14.885
+./ownDesigns/BigComplex_impossible.param,3,false,16,2110.943
+./ownDesigns/L_possible.param,0,true,3,3.998
+./ownDesigns/L_possible.param,1,true,3,3.705
+./ownDesigns/L_possible.param,2,true,3,4.314
+./ownDesigns/L_possible.param,3,true,3,4.240
+./ownDesigns/L_impossible.param,0,false,3,4.959
+./ownDesigns/L_impossible.param,1,false,3,3.735
+./ownDesigns/L_impossible.param,2,false,3,3.868
+./ownDesigns/L_impossible.param,3,false,3,4.030
