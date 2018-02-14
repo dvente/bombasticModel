@@ -1,0 +1,295 @@
+MINION 3
+# AC-CSE-Times_number = 0
+# AC-CSE-Times_eliminated_expressions = 0
+# AC-CSE-Times_total_size = 0
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# AC-CSE-Or_number = 0
+# AC-CSE-Or_eliminated_expressions = 0
+# AC-CSE-Or_total_size = 0
+# AC-CSE-And_number = 0
+# AC-CSE-And_eliminated_expressions = 0
+# AC-CSE-And_total_size = 0
+# AC-CSE-Sum_number = 0
+# AC-CSE-Sum_eliminated_expressions = 0
+# AC-CSE-Sum_total_size = 0
+# CSE_active_number = 0
+# CSE_active_eliminated_expressions = 0
+# CSE_active_total_size = 0
+**VARIABLES**
+DISCRETE avatarCurrentRow_00000 #
+{1..5}
+DISCRETE avatarCurrentCol_00000 #
+{1..6}
+DISCRETE blocksCurrentRow_00000_00000 #
+{1..5}
+DISCRETE blocksCurrentRow_00000_00001 #
+{1..5}
+DISCRETE blocksCurrentRow_00001_00000 #
+{1..5}
+DISCRETE blocksCurrentCol_00000_00000 #
+{1..6}
+DISCRETE blocksCurrentCol_00000_00001 #
+{1..6}
+DISCRETE blocksCurrentCol_00001_00000 #
+{1..6}
+DISCRETE gridCurrent_00000_00000_00000 #
+{0..2}
+DISCRETE gridCurrent_00000_00000_00001 #
+{0..2}
+DISCRETE gridCurrent_00000_00000_00002 #
+{0..2}
+DISCRETE gridCurrent_00000_00000_00003 #
+{0..2}
+DISCRETE gridCurrent_00000_00000_00004 #
+{0..2}
+DISCRETE gridCurrent_00000_00000_00005 #
+{0..2}
+DISCRETE gridCurrent_00000_00001_00000 #
+{0..2}
+DISCRETE gridCurrent_00000_00001_00001 #
+{0..2}
+DISCRETE gridCurrent_00000_00001_00002 #
+{0..2}
+DISCRETE gridCurrent_00000_00001_00003 #
+{0..2}
+DISCRETE gridCurrent_00000_00001_00004 #
+{0..2}
+DISCRETE gridCurrent_00000_00001_00005 #
+{0..2}
+DISCRETE gridCurrent_00000_00002_00000 #
+{0..2}
+DISCRETE gridCurrent_00000_00002_00001 #
+{0..2}
+DISCRETE gridCurrent_00000_00002_00002 #
+{0..2}
+DISCRETE gridCurrent_00000_00002_00003 #
+{0..2}
+DISCRETE gridCurrent_00000_00002_00004 #
+{0..2}
+DISCRETE gridCurrent_00000_00002_00005 #
+{0..2}
+DISCRETE gridCurrent_00000_00003_00000 #
+{0..2}
+DISCRETE gridCurrent_00000_00003_00001 #
+{0..2}
+DISCRETE gridCurrent_00000_00003_00002 #
+{0..2}
+DISCRETE gridCurrent_00000_00003_00003 #
+{0..2}
+DISCRETE gridCurrent_00000_00003_00004 #
+{0..2}
+DISCRETE gridCurrent_00000_00003_00005 #
+{0..2}
+DISCRETE gridCurrent_00000_00004_00000 #
+{0..2}
+DISCRETE gridCurrent_00000_00004_00001 #
+{0..2}
+DISCRETE gridCurrent_00000_00004_00002 #
+{0..2}
+DISCRETE gridCurrent_00000_00004_00003 #
+{0..2}
+DISCRETE gridCurrent_00000_00004_00004 #
+{0..2}
+DISCRETE gridCurrent_00000_00004_00005 #
+{0..2}
+DISCRETE gridCurrent_00001_00000_00000 #
+{0..2}
+DISCRETE gridCurrent_00001_00000_00001 #
+{0..2}
+DISCRETE gridCurrent_00001_00000_00002 #
+{0..2}
+DISCRETE gridCurrent_00001_00000_00003 #
+{0..2}
+DISCRETE gridCurrent_00001_00000_00004 #
+{0..2}
+DISCRETE gridCurrent_00001_00000_00005 #
+{0..2}
+DISCRETE gridCurrent_00001_00001_00000 #
+{0..2}
+DISCRETE gridCurrent_00001_00001_00001 #
+{0..2}
+DISCRETE gridCurrent_00001_00001_00002 #
+{0..2}
+DISCRETE gridCurrent_00001_00001_00003 #
+{0..2}
+DISCRETE gridCurrent_00001_00001_00004 #
+{0..2}
+DISCRETE gridCurrent_00001_00001_00005 #
+{0..2}
+DISCRETE gridCurrent_00001_00002_00000 #
+{0..2}
+DISCRETE gridCurrent_00001_00002_00001 #
+{0..2}
+DISCRETE gridCurrent_00001_00002_00002 #
+{0..2}
+DISCRETE gridCurrent_00001_00002_00003 #
+{0..2}
+DISCRETE gridCurrent_00001_00002_00004 #
+{0..2}
+DISCRETE gridCurrent_00001_00002_00005 #
+{0..2}
+DISCRETE gridCurrent_00001_00003_00000 #
+{0..2}
+DISCRETE gridCurrent_00001_00003_00001 #
+{0..2}
+DISCRETE gridCurrent_00001_00003_00002 #
+{0..2}
+DISCRETE gridCurrent_00001_00003_00003 #
+{0..2}
+DISCRETE gridCurrent_00001_00003_00004 #
+{0..2}
+DISCRETE gridCurrent_00001_00003_00005 #
+{0..2}
+DISCRETE gridCurrent_00001_00004_00000 #
+{0..2}
+DISCRETE gridCurrent_00001_00004_00001 #
+{0..2}
+DISCRETE gridCurrent_00001_00004_00002 #
+{0..2}
+DISCRETE gridCurrent_00001_00004_00003 #
+{0..2}
+DISCRETE gridCurrent_00001_00004_00004 #
+{0..2}
+DISCRETE gridCurrent_00001_00004_00005 #
+{0..2}
+DISCRETE gridCurrent_00002_00000_00000 #
+{0..2}
+DISCRETE gridCurrent_00002_00000_00001 #
+{0..2}
+DISCRETE gridCurrent_00002_00000_00002 #
+{0..2}
+DISCRETE gridCurrent_00002_00000_00003 #
+{0..2}
+DISCRETE gridCurrent_00002_00000_00004 #
+{0..2}
+DISCRETE gridCurrent_00002_00000_00005 #
+{0..2}
+DISCRETE gridCurrent_00002_00001_00000 #
+{0..2}
+DISCRETE gridCurrent_00002_00001_00001 #
+{0..2}
+DISCRETE gridCurrent_00002_00001_00002 #
+{0..2}
+DISCRETE gridCurrent_00002_00001_00003 #
+{0..2}
+DISCRETE gridCurrent_00002_00001_00004 #
+{0..2}
+DISCRETE gridCurrent_00002_00001_00005 #
+{0..2}
+DISCRETE gridCurrent_00002_00002_00000 #
+{0..2}
+DISCRETE gridCurrent_00002_00002_00001 #
+{0..2}
+DISCRETE gridCurrent_00002_00002_00002 #
+{0..2}
+DISCRETE gridCurrent_00002_00002_00003 #
+{0..2}
+DISCRETE gridCurrent_00002_00002_00004 #
+{0..2}
+DISCRETE gridCurrent_00002_00002_00005 #
+{0..2}
+DISCRETE gridCurrent_00002_00003_00000 #
+{0..2}
+DISCRETE gridCurrent_00002_00003_00001 #
+{0..2}
+DISCRETE gridCurrent_00002_00003_00002 #
+{0..2}
+DISCRETE gridCurrent_00002_00003_00003 #
+{0..2}
+DISCRETE gridCurrent_00002_00003_00004 #
+{0..2}
+DISCRETE gridCurrent_00002_00003_00005 #
+{0..2}
+DISCRETE gridCurrent_00002_00004_00000 #
+{0..2}
+DISCRETE gridCurrent_00002_00004_00001 #
+{0..2}
+DISCRETE gridCurrent_00002_00004_00002 #
+{0..2}
+DISCRETE gridCurrent_00002_00004_00003 #
+{0..2}
+DISCRETE gridCurrent_00002_00004_00004 #
+{0..2}
+DISCRETE gridCurrent_00002_00004_00005 #
+{0..2}
+DISCRETE gridCurrent_00003_00000_00000 #
+{0..2}
+DISCRETE gridCurrent_00003_00000_00001 #
+{0..2}
+DISCRETE gridCurrent_00003_00000_00002 #
+{0..2}
+DISCRETE gridCurrent_00003_00000_00003 #
+{0..2}
+DISCRETE gridCurrent_00003_00000_00004 #
+{0..2}
+DISCRETE gridCurrent_00003_00000_00005 #
+{0..2}
+DISCRETE gridCurrent_00003_00001_00000 #
+{0..2}
+DISCRETE gridCurrent_00003_00001_00001 #
+{0..2}
+DISCRETE gridCurrent_00003_00001_00002 #
+{0..2}
+DISCRETE gridCurrent_00003_00001_00003 #
+{0..2}
+DISCRETE gridCurrent_00003_00001_00004 #
+{0..2}
+DISCRETE gridCurrent_00003_00001_00005 #
+{0..2}
+DISCRETE gridCurrent_00003_00002_00000 #
+{0..2}
+DISCRETE gridCurrent_00003_00002_00001 #
+{0..2}
+DISCRETE gridCurrent_00003_00002_00002 #
+{0..2}
+DISCRETE gridCurrent_00003_00002_00003 #
+{0..2}
+DISCRETE gridCurrent_00003_00002_00004 #
+{0..2}
+DISCRETE gridCurrent_00003_00002_00005 #
+{0..2}
+DISCRETE gridCurrent_00003_00003_00000 #
+{0..2}
+DISCRETE gridCurrent_00003_00003_00001 #
+{0..2}
+DISCRETE gridCurrent_00003_00003_00002 #
+{0..2}
+DISCRETE gridCurrent_00003_00003_00003 #
+{0..2}
+DISCRETE gridCurrent_00003_00003_00004 #
+{0..2}
+DISCRETE gridCurrent_00003_00003_00005 #
+{0..2}
+DISCRETE gridCurrent_00003_00004_00000 #
+{0..2}
+DISCRETE gridCurrent_00003_00004_00001 #
+{0..2}
+DISCRETE gridCurrent_00003_00004_00002 #
+{0..2}
+DISCRETE gridCurrent_00003_00004_00003 #
+{0..2}
+DISCRETE gridCurrent_00003_00004_00004 #
+{0..2}
+DISCRETE gridCurrent_00003_00004_00005 #
+{0..2}
+**TUPLELIST**
+gridInit 5 6
+0 0 0 0 0 0 
+0 0 0 2 0 0 
+0 2 2 2 2 0 
+0 0 0 2 2 0 
+0 0 0 0 0 0 
+**VARIABLES**
+ALIAS gridInit[5,6]=[[0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0], [0, 2, 2, 2, 2, 0], [0, 0, 0, 2, 2, 0], [0, 0, 0, 0, 0, 0]]
+ALIAS blocksInitRow[2]=[3, 3]
+ALIAS blocksInitCol[2]=[3, 4]
+ALIAS blocksGoalRow[2]=[3, 2]
+ALIAS blocksGoalCol[2]=[2, 4]
+**SEARCH**
+PRINT[[avatarCurrentRow_00000],[avatarCurrentCol_00000],[blocksCurrentRow_00000_00000],[blocksCurrentRow_00000_00001],[blocksCurrentRow_00001_00000],[blocksCurrentCol_00000_00000],[blocksCurrentCol_00000_00001],[blocksCurrentCol_00001_00000],[gridCurrent_00000_00000_00000],[gridCurrent_00000_00000_00001],[gridCurrent_00000_00000_00002],[gridCurrent_00000_00000_00003],[gridCurrent_00000_00000_00004],[gridCurrent_00000_00000_00005],[gridCurrent_00000_00001_00000],[gridCurrent_00000_00001_00001],[gridCurrent_00000_00001_00002],[gridCurrent_00000_00001_00003],[gridCurrent_00000_00001_00004],[gridCurrent_00000_00001_00005],[gridCurrent_00000_00002_00000],[gridCurrent_00000_00002_00001],[gridCurrent_00000_00002_00002],[gridCurrent_00000_00002_00003],[gridCurrent_00000_00002_00004],[gridCurrent_00000_00002_00005],[gridCurrent_00000_00003_00000],[gridCurrent_00000_00003_00001],[gridCurrent_00000_00003_00002],[gridCurrent_00000_00003_00003],[gridCurrent_00000_00003_00004],[gridCurrent_00000_00003_00005],[gridCurrent_00000_00004_00000],[gridCurrent_00000_00004_00001],[gridCurrent_00000_00004_00002],[gridCurrent_00000_00004_00003],[gridCurrent_00000_00004_00004],[gridCurrent_00000_00004_00005],[gridCurrent_00001_00000_00000],[gridCurrent_00001_00000_00001],[gridCurrent_00001_00000_00002],[gridCurrent_00001_00000_00003],[gridCurrent_00001_00000_00004],[gridCurrent_00001_00000_00005],[gridCurrent_00001_00001_00000],[gridCurrent_00001_00001_00001],[gridCurrent_00001_00001_00002],[gridCurrent_00001_00001_00003],[gridCurrent_00001_00001_00004],[gridCurrent_00001_00001_00005],[gridCurrent_00001_00002_00000],[gridCurrent_00001_00002_00001],[gridCurrent_00001_00002_00002],[gridCurrent_00001_00002_00003],[gridCurrent_00001_00002_00004],[gridCurrent_00001_00002_00005],[gridCurrent_00001_00003_00000],[gridCurrent_00001_00003_00001],[gridCurrent_00001_00003_00002],[gridCurrent_00001_00003_00003],[gridCurrent_00001_00003_00004],[gridCurrent_00001_00003_00005],[gridCurrent_00001_00004_00000],[gridCurrent_00001_00004_00001],[gridCurrent_00001_00004_00002],[gridCurrent_00001_00004_00003],[gridCurrent_00001_00004_00004],[gridCurrent_00001_00004_00005],[gridCurrent_00002_00000_00000],[gridCurrent_00002_00000_00001],[gridCurrent_00002_00000_00002],[gridCurrent_00002_00000_00003],[gridCurrent_00002_00000_00004],[gridCurrent_00002_00000_00005],[gridCurrent_00002_00001_00000],[gridCurrent_00002_00001_00001],[gridCurrent_00002_00001_00002],[gridCurrent_00002_00001_00003],[gridCurrent_00002_00001_00004],[gridCurrent_00002_00001_00005],[gridCurrent_00002_00002_00000],[gridCurrent_00002_00002_00001],[gridCurrent_00002_00002_00002],[gridCurrent_00002_00002_00003],[gridCurrent_00002_00002_00004],[gridCurrent_00002_00002_00005],[gridCurrent_00002_00003_00000],[gridCurrent_00002_00003_00001],[gridCurrent_00002_00003_00002],[gridCurrent_00002_00003_00003],[gridCurrent_00002_00003_00004],[gridCurrent_00002_00003_00005],[gridCurrent_00002_00004_00000],[gridCurrent_00002_00004_00001],[gridCurrent_00002_00004_00002],[gridCurrent_00002_00004_00003],[gridCurrent_00002_00004_00004],[gridCurrent_00002_00004_00005],[gridCurrent_00003_00000_00000],[gridCurrent_00003_00000_00001],[gridCurrent_00003_00000_00002],[gridCurrent_00003_00000_00003],[gridCurrent_00003_00000_00004],[gridCurrent_00003_00000_00005],[gridCurrent_00003_00001_00000],[gridCurrent_00003_00001_00001],[gridCurrent_00003_00001_00002],[gridCurrent_00003_00001_00003],[gridCurrent_00003_00001_00004],[gridCurrent_00003_00001_00005],[gridCurrent_00003_00002_00000],[gridCurrent_00003_00002_00001],[gridCurrent_00003_00002_00002],[gridCurrent_00003_00002_00003],[gridCurrent_00003_00002_00004],[gridCurrent_00003_00002_00005],[gridCurrent_00003_00003_00000],[gridCurrent_00003_00003_00001],[gridCurrent_00003_00003_00002],[gridCurrent_00003_00003_00003],[gridCurrent_00003_00003_00004],[gridCurrent_00003_00003_00005],[gridCurrent_00003_00004_00000],[gridCurrent_00003_00004_00001],[gridCurrent_00003_00004_00002],[gridCurrent_00003_00004_00003],[gridCurrent_00003_00004_00004],[gridCurrent_00003_00004_00005]]
+VARORDER STATIC [1, 0, 0, 0, -1, -1, avatarCurrentRow_00000, 4, 4, 3, avatarCurrentCol_00000, 5, 4, 3, blocksCurrentRow_00000_00000, blocksCurrentRow_00000_00001, blocksCurrentRow_00001_00000, 3, 3, 3, 3, 3, blocksCurrentCol_00000_00000, blocksCurrentCol_00000_00001, blocksCurrentCol_00001_00000, 4, 3, 4, 3, 4, gridCurrent_00000_00000_00000, gridCurrent_00000_00000_00001, gridCurrent_00000_00000_00002, gridCurrent_00000_00000_00003, gridCurrent_00000_00000_00004, gridCurrent_00000_00000_00005, gridCurrent_00000_00001_00000, gridCurrent_00000_00001_00001, gridCurrent_00000_00001_00002, gridCurrent_00000_00001_00003, gridCurrent_00000_00001_00004, gridCurrent_00000_00001_00005, gridCurrent_00000_00002_00000, gridCurrent_00000_00002_00001, gridCurrent_00000_00002_00002, gridCurrent_00000_00002_00003, gridCurrent_00000_00002_00004, gridCurrent_00000_00002_00005, gridCurrent_00000_00003_00000, gridCurrent_00000_00003_00001, gridCurrent_00000_00003_00002, gridCurrent_00000_00003_00003, gridCurrent_00000_00003_00004, gridCurrent_00000_00003_00005, gridCurrent_00000_00004_00000, gridCurrent_00000_00004_00001, gridCurrent_00000_00004_00002, gridCurrent_00000_00004_00003, gridCurrent_00000_00004_00004, gridCurrent_00000_00004_00005, gridCurrent_00001_00000_00000, gridCurrent_00001_00000_00001, gridCurrent_00001_00000_00002, gridCurrent_00001_00000_00003, gridCurrent_00001_00000_00004, gridCurrent_00001_00000_00005, gridCurrent_00001_00001_00000, gridCurrent_00001_00001_00001, gridCurrent_00001_00001_00002, gridCurrent_00001_00001_00003, gridCurrent_00001_00001_00004, gridCurrent_00001_00001_00005, gridCurrent_00001_00002_00000, gridCurrent_00001_00002_00001, gridCurrent_00001_00002_00002, gridCurrent_00001_00002_00003, gridCurrent_00001_00002_00004, gridCurrent_00001_00002_00005, gridCurrent_00001_00003_00000, gridCurrent_00001_00003_00001, gridCurrent_00001_00003_00002, gridCurrent_00001_00003_00003, gridCurrent_00001_00003_00004, gridCurrent_00001_00003_00005, gridCurrent_00001_00004_00000, gridCurrent_00001_00004_00001, gridCurrent_00001_00004_00002, gridCurrent_00001_00004_00003, gridCurrent_00001_00004_00004, gridCurrent_00001_00004_00005, gridCurrent_00002_00000_00000, gridCurrent_00002_00000_00001, gridCurrent_00002_00000_00002, gridCurrent_00002_00000_00003, gridCurrent_00002_00000_00004, gridCurrent_00002_00000_00005, gridCurrent_00002_00001_00000, gridCurrent_00002_00001_00001, gridCurrent_00002_00001_00002, gridCurrent_00002_00001_00003, gridCurrent_00002_00001_00004, gridCurrent_00002_00001_00005, gridCurrent_00002_00002_00000, gridCurrent_00002_00002_00001, gridCurrent_00002_00002_00002, gridCurrent_00002_00002_00003, gridCurrent_00002_00002_00004, gridCurrent_00002_00002_00005, gridCurrent_00002_00003_00000, gridCurrent_00002_00003_00001, gridCurrent_00002_00003_00002, gridCurrent_00002_00003_00003, gridCurrent_00002_00003_00004, gridCurrent_00002_00003_00005, gridCurrent_00002_00004_00000, gridCurrent_00002_00004_00001, gridCurrent_00002_00004_00002, gridCurrent_00002_00004_00003, gridCurrent_00002_00004_00004, gridCurrent_00002_00004_00005, gridCurrent_00003_00000_00000, gridCurrent_00003_00000_00001, gridCurrent_00003_00000_00002, gridCurrent_00003_00000_00003, gridCurrent_00003_00000_00004, gridCurrent_00003_00000_00005, gridCurrent_00003_00001_00000, gridCurrent_00003_00001_00001, gridCurrent_00003_00001_00002, gridCurrent_00003_00001_00003, gridCurrent_00003_00001_00004, gridCurrent_00003_00001_00005, gridCurrent_00003_00002_00000, gridCurrent_00003_00002_00001, gridCurrent_00003_00002_00002, gridCurrent_00003_00002_00003, gridCurrent_00003_00002_00004, gridCurrent_00003_00002_00005, gridCurrent_00003_00003_00000, gridCurrent_00003_00003_00001, gridCurrent_00003_00003_00002, gridCurrent_00003_00003_00003, gridCurrent_00003_00003_00004, gridCurrent_00003_00003_00005, gridCurrent_00003_00004_00000, gridCurrent_00003_00004_00001, gridCurrent_00003_00004_00002, gridCurrent_00003_00004_00003, gridCurrent_00003_00004_00004, gridCurrent_00003_00004_00005]
+VARORDER AUX [avatarCurrentRow_00000,avatarCurrentCol_00000,blocksCurrentRow_00000_00000,blocksCurrentRow_00000_00001,blocksCurrentRow_00001_00000,blocksCurrentCol_00000_00000,blocksCurrentCol_00000_00001,blocksCurrentCol_00001_00000,gridCurrent_00000_00000_00000,gridCurrent_00000_00000_00001,gridCurrent_00000_00000_00002,gridCurrent_00000_00000_00003,gridCurrent_00000_00000_00004,gridCurrent_00000_00000_00005,gridCurrent_00000_00001_00000,gridCurrent_00000_00001_00001,gridCurrent_00000_00001_00002,gridCurrent_00000_00001_00003,gridCurrent_00000_00001_00004,gridCurrent_00000_00001_00005,gridCurrent_00000_00002_00000,gridCurrent_00000_00002_00001,gridCurrent_00000_00002_00002,gridCurrent_00000_00002_00003,gridCurrent_00000_00002_00004,gridCurrent_00000_00002_00005,gridCurrent_00000_00003_00000,gridCurrent_00000_00003_00001,gridCurrent_00000_00003_00002,gridCurrent_00000_00003_00003,gridCurrent_00000_00003_00004,gridCurrent_00000_00003_00005,gridCurrent_00000_00004_00000,gridCurrent_00000_00004_00001,gridCurrent_00000_00004_00002,gridCurrent_00000_00004_00003,gridCurrent_00000_00004_00004,gridCurrent_00000_00004_00005,gridCurrent_00001_00000_00000,gridCurrent_00001_00000_00001,gridCurrent_00001_00000_00002,gridCurrent_00001_00000_00003,gridCurrent_00001_00000_00004,gridCurrent_00001_00000_00005,gridCurrent_00001_00001_00000,gridCurrent_00001_00001_00001,gridCurrent_00001_00001_00002,gridCurrent_00001_00001_00003,gridCurrent_00001_00001_00004,gridCurrent_00001_00001_00005,gridCurrent_00001_00002_00000,gridCurrent_00001_00002_00001,gridCurrent_00001_00002_00002,gridCurrent_00001_00002_00003,gridCurrent_00001_00002_00004,gridCurrent_00001_00002_00005,gridCurrent_00001_00003_00000,gridCurrent_00001_00003_00001,gridCurrent_00001_00003_00002,gridCurrent_00001_00003_00003,gridCurrent_00001_00003_00004,gridCurrent_00001_00003_00005,gridCurrent_00001_00004_00000,gridCurrent_00001_00004_00001,gridCurrent_00001_00004_00002,gridCurrent_00001_00004_00003,gridCurrent_00001_00004_00004,gridCurrent_00001_00004_00005,gridCurrent_00002_00000_00000,gridCurrent_00002_00000_00001,gridCurrent_00002_00000_00002,gridCurrent_00002_00000_00003,gridCurrent_00002_00000_00004,gridCurrent_00002_00000_00005,gridCurrent_00002_00001_00000,gridCurrent_00002_00001_00001,gridCurrent_00002_00001_00002,gridCurrent_00002_00001_00003,gridCurrent_00002_00001_00004,gridCurrent_00002_00001_00005,gridCurrent_00002_00002_00000,gridCurrent_00002_00002_00001,gridCurrent_00002_00002_00002,gridCurrent_00002_00002_00003,gridCurrent_00002_00002_00004,gridCurrent_00002_00002_00005,gridCurrent_00002_00003_00000,gridCurrent_00002_00003_00001,gridCurrent_00002_00003_00002,gridCurrent_00002_00003_00003,gridCurrent_00002_00003_00004,gridCurrent_00002_00003_00005,gridCurrent_00002_00004_00000,gridCurrent_00002_00004_00001,gridCurrent_00002_00004_00002,gridCurrent_00002_00004_00003,gridCurrent_00002_00004_00004,gridCurrent_00002_00004_00005,gridCurrent_00003_00000_00000,gridCurrent_00003_00000_00001,gridCurrent_00003_00000_00002,gridCurrent_00003_00000_00003,gridCurrent_00003_00000_00004,gridCurrent_00003_00000_00005,gridCurrent_00003_00001_00000,gridCurrent_00003_00001_00001,gridCurrent_00003_00001_00002,gridCurrent_00003_00001_00003,gridCurrent_00003_00001_00004,gridCurrent_00003_00001_00005,gridCurrent_00003_00002_00000,gridCurrent_00003_00002_00001,gridCurrent_00003_00002_00002,gridCurrent_00003_00002_00003,gridCurrent_00003_00002_00004,gridCurrent_00003_00002_00005,gridCurrent_00003_00003_00000,gridCurrent_00003_00003_00001,gridCurrent_00003_00003_00002,gridCurrent_00003_00003_00003,gridCurrent_00003_00003_00004,gridCurrent_00003_00003_00005,gridCurrent_00003_00004_00000,gridCurrent_00003_00004_00001,gridCurrent_00003_00004_00002,gridCurrent_00003_00004_00003,gridCurrent_00003_00004_00004,gridCurrent_00003_00004_00005]
+**CONSTRAINTS**
+false()**EOF**

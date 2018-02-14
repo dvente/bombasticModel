@@ -1,8 +1,8 @@
 language ESSENCE' 1.0
 $ Minion SolverNodes: 3271
-$ Minion SolverTotalTime: 0.147097
+$ Minion SolverTotalTime: 0.201908
 $ Minion SolverTimeOut: 0
-$ Savile Row TotalTime: 1.384
+$ Savile Row TotalTime: 1.263
 letting avatarCurrentCol be [2, 2, 3, 2, 2, 3, 3, 2, 2, 3, 4;int(0..10)]
 letting avatarCurrentRow be [2, 3, 3, 3, 4, 4, 3, 3, 2, 2, 2;int(0..10)]
 letting blocksCurrentCol be [[3, 3, 3;int(1..3)], 
