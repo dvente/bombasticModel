@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  13 FEB 2018 10:13
+This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  14 FEB 2018 11:19
  restricted system commands enabled.
 **Bombastic.tex
 (./Bombastic.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 2.316 seconds
+luaotfload | main : initialization completed in 2.082 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -783,11 +783,11 @@ KTeX/2.9/luatex-cache/generic/fonts/otl/lmroman12-bold.luc)(load luc: C:/Users/D
 aniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmmono10-regular.l
 uc) [1
 
-{C:/Users/Daniel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Daniel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 
-LaTeX Warning: Empty bibliography on input line 85.
+LaTeX Warning: Empty bibliography on input line 87.
 
-[2] (./Bombastic.aux)
+[3] (./Bombastic.aux)
 Package logreq Info: Writing requests to 'Bombastic.run.xml'.
 
 \openout1 = Bombastic.run.xml
@@ -796,10 +796,10 @@ Package logreq Info: Writing requests to 'Bombastic.run.xml'.
 Here is how much of LuaTeX's memory you used:
  12089 strings out of 494456
  125171,794899 words of node,token memory allocated
- 496 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 6 attribute, 55 glue_spec, 6 attrib
+ 501 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 6 attribute, 56 glue_spec, 6 attrib
 ute_list, 1 write nodes
-   avail lists: 2:181,3:64,4:10,5:172,6:16,7:2025,8:4,9:52,10:6,11:84
+   avail lists: 2:182,3:64,4:11,5:172,6:16,7:3444,8:4,9:52,10:6,11:179
  15797 multiletter control sequences out of 65536+200000
  48 fonts using 3393815 bytes
  43i,6n,45p,797b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -814,9 +814,9 @@ an12-regular.otf><c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/openty
 pe/public/lm/lmroman17-regular.otf><C:/Users/Daniel/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Daniel/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Bombastic.pdf (2 pages, 51195 bytes).
+Output written on Bombastic.pdf (3 pages, 55322 bytes).
 
-PDF statistics: 66 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 69 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -64,7 +64,9 @@ In this instance I was required to use the modelling language \code{Essence prim
 
 \subsection{Designed instances}
 I was also required to design new instances of this problem class. I took this opportunity to design a few instances that can be used to either test specific parts of the modelled logic or some artificially difficult problem to test the performance. They are designed in pairs. Every problem has one paramter file that is solvable and one that isn't so that we can see how the performance compares to comperable problems. We will discuss them below. Human readable maps of all the instances are provided in the files. 
-
+\begin{enumerate}[10)]
+	\item This problem is a slight adaptation of the \code{Bombastic1\_1.param}. It is just a single width corridor with two blocks in it. This is designed to test the avatar's inability to push more than one block at the same time.
+\end{enumerate}
 	\paragraph{2Blocks} This problem is a slight adaptation of the \code{Bombastic1\_1.param}. It is just a single width corridor with two blocks in it. This is designed to test the avatar's inability to push more than one block at the same time. 
 	\paragraph{BigComplex} This instance is a simple adaptation of \code{Bombastic9\_17.param}.  It is identical to the old instance but it has a relatively big empty space added at the bottom that should change nothing about the solution. This was done to test how well the solver would fair if a lot of useless space was added. 
 	\paragraph{iceT} This problem contains a square of ice in the middle with two single width corridors with a block in them on either end. The possible version has one ice cell replaced with a normal one, making it possible. This instance was designed to test how the solver deals with ice planning, and whether the ice mechanic is done correctly. The impossible version also has a step length less than the possible version. This is not strictly necessary since the impossibility comes form the ice configuration, but this made our naming scheme and subsequently the data collection and visualisation much easier, while it shouldn't change the final outcome. 
