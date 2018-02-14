@@ -63,14 +63,14 @@ Given the grid layout, the positions of the blocks, the position of the goals, a
 In this instance I was required to use the modelling language \code{Essence prime} in conjunction with the constraint solver Savile Row. I was also provided with the decision variables, their domains and several sets of parameters to test the system.   
 
 \subsection{Designed instances}
-I was also required to design new instances of this problem class. I took this opportunity to design a few instances that can be used to either test specific parts of the modelled logic or some artificially difficult problem to test the performance. They are designed in pairs. Every problem has one paramter file that is solvable and one that isn't so that we can see how the performance compares to comperable problems. We will discuss them below
+I was also required to design new instances of this problem class. I took this opportunity to design a few instances that can be used to either test specific parts of the modelled logic or some artificially difficult problem to test the performance. They are designed in pairs. Every problem has one paramter file that is solvable and one that isn't so that we can see how the performance compares to comperable problems. We will discuss them below. Human readable maps of all the instances are provided in the files. 
 
-	\paragraph{2Blocks}
-	\paragraph{BigComplex}
-	\paragraph{iceT}
-	\paragraph{L}
-	\paragraph{T}
-	\paragraph{WideOpen}
+	\paragraph{2Blocks} This problem is a slight adaptation of the \code{Bombastic1\_1.param}. It is just a single width corridor with two blocks in it. This is designed to test the avatar's inability to push more than one block at the same time. 
+	\paragraph{BigComplex} This instance is a simple adaptation of \code{Bombastic9\_17.param}.  It is identical to the old instance but it has a relatively big empty space added at the bottom that should change nothing about the solution. This was done to test how well the solver would fair if a lot of useless space was added. 
+	\paragraph{iceT} This problem contains a square of ice in the middle with two single width corridors with a block in them on either end. The possible version has one ice cell replaced with a normal one, making it possible. This instance was designed to test how the solver deals with ice planning, and whether the ice mechanic is done correctly. The impossible version also has a step length less than the possible version. This is not strictly necessary since the impossibility comes form the ice configuration, but this made our naming scheme and subsequently the data collection and visualisation much easier, while it shouldn't change the final outcome. 
+	\paragraph{L} This is another instance designed to test the ice mechanic. There is a L shaped corridor with an ice cell at the intersection that the avatar starts on and a block and goal in each branch. The possible version removes the ice cell. The impossible version also has a step length less than the possible version. This is not strictly necessary since the impossibility comes form the ice configuration, but this made our naming scheme and subsequently the data collection and visualisation much easier, while it shouldn't change the final outcome.  
+	\paragraph{T} This instance is a slightly more complicated instance to test the inability of the avatar to push more than one box at a time. It has a small room and two blocks in a row with goals on two sides. This instance requrest a tiny bit of planning, since the avatar will have to walk around the blocks first. 
+	\paragraph{WideOpen} This instance is simply a large open room with no complications. It is designed to test how the solver performs in terms of the length of the solutions and the size of the possible moves while the actual solution is very uncomplicated. 
 
 \section{Emperical evluation}
 \label{results}
