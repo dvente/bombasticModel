@@ -33,12 +33,7 @@ for root, dirs, files in os.walk("."):
 					lineOut += "true,"
 				else:
 					lineOut += "false,"
-
-				#solutionOutput = sub.check_output("cat " + filePath,shell=True)
-                                #solutionSearch = solutionLengthPatern.search(solutionOutput)
-                                #solutionLength = solutionSearch.group(1)
-                                #lineOut += str(solutionLength) + ",
-
+					
 				match = timePatern.search(subOut)
 				lineOut += match.group(0)
 				sub.call("echo \"" + lineOut + "\" >> "+logFile,shell=True)
