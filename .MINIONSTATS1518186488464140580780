@@ -1,2 +1,0 @@
-#"CommandLineArguments" "Filename" "FirstNodeTime" "InitialPropagate" "MinionVersion" "Nodes" "ParsingTime" "Preprocess" "RandomSeed" "Satisfiable" "SetupTime" "SolutionsFound" "SolveTime" "TimeOut" "TotalTime" 
-stacscheck-test.param.minion,-printsolsonly,-preprocess,SACBounds,-tableout,.MINIONSTATS1518186488464140580780,-solsout,.MINIONSOLS15181864884641389447743,-noprintsols stacscheck-test.param.minion 0.02703 0.001562 0 3035636 0.003989 SACBounds 1518198433 0 0.001404 0 94.7688 0 94.8028 
