@@ -72,7 +72,6 @@ forAll t : int(1..steps) .
   |moveCol[t]| + |moveRow[t]| = 1,
 
 
-
 $update avatar position
 forAll t : int(1..steps) . 
   avatarCurrentRow[t] = avatarCurrentRow[t-1] + moveRow[t] 

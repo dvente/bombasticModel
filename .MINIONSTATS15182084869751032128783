@@ -1,2 +1,0 @@
-#"CommandLineArguments" "Filename" "FirstNodeTime" "InitialPropagate" "MinionVersion" "Nodes" "ParsingTime" "Preprocess" "RandomSeed" "Satisfiable" "SetupTime" "SolutionsFound" "SolveTime" "TimeOut" "TotalTime" 
-./Bombastic8_15.param.minion,-printsolsonly,-preprocess,SACBounds,-tableout,.MINIONSTATS15182084869751032128783,-solsout,.MINIONSOLS1518208486975487821460,-noprintsols ./Bombastic8_15.param.minion 0.704117 0.007443 0 335008 0.035886 SACBounds 1518229587 0 0.007392 0 55.8708 0 56.6257 
