@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  15 FEB 2018 22:02
+This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  16 FEB 2018 20:31
  restricted system commands enabled.
 **Bombastic.tex
 (./Bombastic.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 2.071 seconds
+luaotfload | main : initialization completed in 1.850 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -664,16 +664,46 @@ ty"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks26
 )
-\c@defin=\count318
-\c@prop=\count319
-\c@col=\count320
-\c@thm=\count321
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/booktabs/booktabs
+.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen127
+\lightrulewidth=\dimen128
+\cmidrulewidth=\dimen129
+\belowrulesep=\dimen130
+\belowbottomsep=\dimen131
+\aboverulesep=\dimen132
+\abovetopsep=\dimen133
+\cmidrulesep=\dimen134
+\cmidrulekern=\dimen135
+\defaultaddspace=\dimen136
+\@cmidla=\count318
+\@cmidlb=\count319
+\@aboverulesep=\dimen137
+\@belowrulesep=\dimen138
+\@thisruleclass=\count320
+\@lastruleclass=\count321
+\@thisrulewidth=\dimen139
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/wrapfig/wrapfig.s
+ty"
+\wrapoverhang=\dimen140
+\WF@size=\dimen141
+\c@WF@wrappedlines=\count322
+\WF@box=\box30
+\WF@everypar=\toks27
+Package: wrapfig 2003/01/31  v 3.6
+)
+\c@defin=\count323
+\c@prop=\count324
+\c@col=\count325
+\c@thm=\count326
 
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/placeins/placeins
 .sty"
 Package: placeins 2005/04/18  v 2.2
 )
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 25.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 27.
 
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/t1txtt.fd
 "
@@ -714,20 +744,20 @@ File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 ))) (./Bombastic.aux)
 \openout1 = Bombastic.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
@@ -737,8 +767,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Bombastic.bbl' found.
  (./Bombastic.bbl)
-Package biblatex Info: Reference section=0 on input line 74.
-Package biblatex Info: Reference segment=0 on input line 74.
+Package biblatex Info: Reference section=0 on input line 76.
+Package biblatex Info: Reference segment=0 on input line 76.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -778,17 +808,17 @@ Package biblatex Info: Reference segment=0 on input line 74.
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.m
 kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen127
-\scratchbox=\box30
-\nofMPsegments=\count323
-\nofMParguments=\count324
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen128
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count327
+\scratchdimen=\dimen142
+\scratchbox=\box31
+\nofMPsegments=\count328
+\nofMParguments=\count329
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count330
+\MPscratchDim=\dimen143
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
+\everyMPtoPDFconversion=\toks29
 )
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf
 -base.sty"
@@ -809,7 +839,7 @@ Package grfext Info: Graphics extension search list:
 ,.JBIG2,.JB2 ,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count328
+\c@lstlisting=\count333
 (load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/o
 tl/lmroman17-regular.luc)(load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/lua
 tex-cache/generic/fonts/otl/lmroman12-regular.luc)(load luc: C:/Users/Daniel/App
@@ -817,68 +847,72 @@ Data/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman9-regular.luc)(load
 luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmr
 oman9-bold.luc)(load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/
 generic/fonts/otl/lmroman12-bold.luc)(load luc: C:/Users/Daniel/AppData/Local/Mi
-KTeX/2.9/luatex-cache/generic/fonts/otl/lmmono10-regular.luc) [1
+KTeX/2.9/luatex-cache/generic/fonts/otl/lmmono10-regular.luc)(load luc: C:/Users
+/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10-italic
+.luc) [1
 
 {C:/Users/Daniel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}](load luc: C
 :/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10
 -bold.luc) [2] [3] [4]
-<stepsVsCPUSec.png, id=24, pagebox=cropbox, 897.3525pt x 430.60875pt>
+<stepsVsCPUSec.png, id=25, pagebox=cropbox, 897.3525pt x 430.60875pt>
 File: stepsVsCPUSec.png Graphic file (type png)
 <use stepsVsCPUSec.png>
-Package luatex.def Info: stepsVsCPUSec.png  used on input line 156. on input lin
-e 156.
+Package luatex.def Info: stepsVsCPUSec.png  used on input line 181. on input lin
+e 181.
 Package luatex.def Info: Requested size: 422.77664pt x 202.87234pt on input line
- 156.
-<idVsCPUSecDiffed.png, id=25, pagebox=cropbox, 903.375pt x 431.6125pt>
+ 181.
+ [5<./stepsVsCPUSec.png>]
+<idVsCPUSecDiffed.png, id=30, pagebox=cropbox, 897.3525pt x 443.6575pt>
 File: idVsCPUSecDiffed.png Graphic file (type png)
 <use idVsCPUSecDiffed.png>
-Package luatex.def Info: idVsCPUSecDiffed.png  used on input line 165. on input 
-line 165.
-Package luatex.def Info: Requested size: 422.77664pt x 201.99515pt on input line
- 165.
- [5<./stepsVsCPUSec.png>]
+Package luatex.def Info: idVsCPUSecDiffed.png  used on input line 200. on input 
+line 200.
+Package luatex.def Info: Requested size: 422.77664pt x 209.02pt on input line 20
+0.
+ [6<./idVsCPUSecDiffed.png>]
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang1
 .sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (../timer.py [6<./idVsCPUSecDiffed.png>])
+) (../timer.py [7])
 
-LaTeX Warning: Empty bibliography on input line 192.
+LaTeX Warning: Empty bibliography on input line 222.
 
-[7] (./Bombastic.aux)
+[8] (./Bombastic.aux)
 Package logreq Info: Writing requests to 'Bombastic.run.xml'.
 
 \openout1 = Bombastic.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 12779 strings out of 494456
- 125171,794899 words of node,token memory allocated
+ 12910 strings out of 494456
+ 156468,794899 words of node,token memory allocated
  501 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 6 attribute, 56 glue_spec, 6 attrib
 ute_list, 1 write nodes
-   avail lists: 1:1,2:2441,3:59,4:227,5:2577,6:29,7:5009,8:1405,9:3691,10:38,11:
-274
- 16407 multiletter control sequences out of 65536+200000
- 53 fonts using 3953783 bytes
- 43i,7n,45p,902b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
+   avail lists: 1:2,2:3507,3:69,4:324,5:3778,6:37,7:5269,8:2054,9:5382,10:38,11:
+417
+ 16523 multiletter control sequences out of 65536+200000
+ 54 fonts using 4085463 bytes
+ 43i,10n,45p,1008b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmro
 man10-bold.otf><c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype
-/public/lm/lmmono10-regular.otf><c:/users/daniel/appdata/local/programs/miktex 2
-.9/fonts/opentype/public/lm/lmroman10-regular.otf><c:/users/daniel/appdata/local
-/programs/miktex 2.9/fonts/opentype/public/lm/lmroman12-bold.otf><c:/users/danie
-l/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmroman9-regular.ot
+/public/lm/lmroman10-italic.otf><c:/users/daniel/appdata/local/programs/miktex 2
+.9/fonts/opentype/public/lm/lmmono10-regular.otf><c:/users/daniel/appdata/local/
+programs/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf><c:/users/dan
+iel/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmroman12-bold.ot
 f><c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lm
-roman9-bold.otf><c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentyp
-e/public/lm/lmroman12-regular.otf><c:/users/daniel/appdata/local/programs/miktex
- 2.9/fonts/opentype/public/lm/lmroman17-regular.otf><C:/Users/Daniel/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Danie
-l/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xb
-tt.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txf
-onts/t1xtt.pfb>
-Output written on Bombastic.pdf (7 pages, 177050 bytes).
+roman9-regular.otf><c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/open
+type/public/lm/lmroman9-bold.otf><c:/users/daniel/appdata/local/programs/miktex 
+2.9/fonts/opentype/public/lm/lmroman12-regular.otf><c:/users/daniel/appdata/loca
+l/programs/miktex 2.9/fonts/opentype/public/lm/lmroman17-regular.otf><C:/Users/D
+aniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/txfonts/t1xbtt.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/txfonts/t1xtt.pfb>
+Output written on Bombastic.pdf (8 pages, 175464 bytes).
 
-PDF statistics: 100 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
