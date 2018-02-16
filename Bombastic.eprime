@@ -64,14 +64,13 @@ forAll block : int(1..numBlocks) .
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ AVATAR MOVEMENT $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
 
-$player can only more to ice or normal palces
-forAll t : int(0..steps) . 
-  gridCurrent[t,avatarCurrentRow[t], avatarCurrentCol[t]] != 0,
-
+$make sure the player never enters a dead space
+gcc([gridCurrent[t,avatarCurrentRow[t],avatarCurrentCol[t]] | t : int(0..steps)], [0], [0]),
 
 $we are allowed to move in each dir but not diagonal and we have to move
 forAll t : int(1..steps) . 
   |moveCol[t]| + |moveRow[t]| = 1,
+
 
 
 $update avatar position
@@ -93,18 +92,11 @@ forAll goalNumb : int(1..numBlocks) .
     blocksCurrentCol[steps,blockNumb] = blocksGoalCol[goalNumb] 
   /\ blocksCurrentRow[steps,blockNumb] = blocksGoalRow[goalNumb],
 
-
-$dead cells stay dead
-forAll t : int(0..steps-1) . 
-  forAll row : int(1..r) .
-    forall col : int(1..c) .
-      gridCurrent[t,row,col] = 0 -> gridCurrent[t+1,row,col] = 0,
-
-$normal cells stay normal
+$normal and dead cells do not change 
 forAll t : int(0..steps-1) .
   forAll row : int(1..r) .
     forall col : int(1..c) .
-      gridCurrent[t,row,col] = 2 -> gridCurrent[t+1,row,col] = 2,
+      gridCurrent[t,row,col] != 1 -> gridCurrent[t+1,row,col] = gridCurrent[t,row,col],
 
 $ice cracs when you leave it. we don't allow non movement so checking whether avatar enters it is enough
 forAll t : int(0..steps-1) .
@@ -141,10 +133,8 @@ forAll t : int(0..steps-1) .
     (blocksCurrentCol[t+1,blockNumb] = blocksCurrentCol[t,blockNumb]
       /\ blocksCurrentRow[t+1,blockNumb] = blocksCurrentRow[t,blockNumb]),
 
-$ $ make sure that blocks never enter dead cels. can this be done using gcc?
-forAll t : int(0..steps) .
-  forAll blockNumb : int(1..numBlocks) .
-    gridCurrent[t,blocksCurrentRow[t,blockNumb],blocksCurrentCol[t,blockNumb]] != 0,
+$ make sure that blocks never enter dead cels.
+gcc([gridCurrent[t,blocksCurrentRow[t,block],blocksCurrentCol[t,block]] | t : int(0..steps), block : int(1..numBlocks)], [0], [0]),
 
 $ $blocks can't share a cell
 forAll t : int(0..steps) .
@@ -166,3 +156,177 @@ forAll t : int(1..steps) .
          /\ avatarCurrentRow[t] + (moveRow[t] * 2) = blocksCurrentRow[t, sndBlock]),
 
 true
+
+
+
+
+
+$ language ESSENCE' 1.0
+
+$ $$$$ Parameters $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$ $ grid has r rows, c columns
+$ $ 0: dead, 1: ice, 2: normal
+$ $ We assume that every grid is surrounded by dead cells
+$ given gridInit : matrix indexed by [int(1..r), int(1..c)] of int(0..2)
+
+$ $ Initial positions of avatar and blocks
+$ $ Doing it like this to check c, r compliance.
+$ given avatarInitRow : int(1..r)
+$ given avatarInitCol : int(1..c)
+
+$ given numBlocks : int
+$ given blocksInitRow : matrix indexed by [int(1..numBlocks)] of int(1..r)
+$ given blocksInitCol : matrix indexed by [int(1..numBlocks)] of int(1..c)
+
+$ $ Goal positions of blocks
+$ given blocksGoalRow : matrix indexed by [int(1..numBlocks)] of int(1..r)
+$ given blocksGoalCol : matrix indexed by [int(1..numBlocks)] of int(1..c)
+
+$ $ Number of steps
+$ given steps : int(1..)
+
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ TEST SOLUTIONS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$ $ given moveRow : matrix indexed by [int(1..steps)] of int(-1..1)
+$ $ given moveCol : matrix indexed by [int(1..steps)] of int(-1..1)
+
+$ $$$$ End of Parameters $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$ $$$$ Decision Variables $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$ $ Decompose into row/col to control domain bounds separately/easily
+$ find moveRow : matrix indexed by [int(1..steps)] of int(-1..1)
+$ find moveCol : matrix indexed by [int(1..steps)] of int(-1..1)
+
+$ $ State variables. Convention is that 0 is initial position,
+$ $ so i is state _after_ move in step i.
+$ find avatarCurrentRow : matrix indexed by [int(0..steps)] of int(1..r)
+$ find avatarCurrentCol : matrix indexed by [int(0..steps)] of int(1..c)
+$ find blocksCurrentRow : matrix indexed by [int(0..steps), int(1..numBlocks)] of int(1..r)
+$ find blocksCurrentCol : matrix indexed by [int(0..steps), int(1..numBlocks)] of int(1..c)
+$ find gridCurrent : matrix indexed by [int(0..steps), int(1..r), int(1..c)] of int(0..2)
+
+$ $$$$ End of Decision Variables $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$ such that
+
+
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ INIT $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$ $set correct beginning for avatar
+$ avatarCurrentRow[0] = avatarInitRow,
+$ avatarCurrentCol[0] = avatarInitCol,
+
+$ $init grid
+$ forAll row : int(1..r) . 
+$   forAll col : int(1..c) . 
+$     gridCurrent[0,row,col] = gridInit[row,col],
+
+$ $init blocks
+$ forAll block : int(1..numBlocks) . 
+$   blocksCurrentCol[0,block] = blocksInitCol[block]
+$   /\ blocksCurrentRow[0,block] = blocksInitRow[block],
+
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ AVATAR MOVEMENT $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+
+$ $player can only more to ice or normal palces
+$ $ forAll t : int(0..steps) . 
+$ $   gridCurrent[t,avatarCurrentRow[t], avatarCurrentCol[t]] != 0,
+$ gcc([gridCurrent[t,row,col] | t : int(0..steps), row : avatarCurrentRow, col : avatarCurrentCol],[0],[0])
+
+$ $we are allowed to move in each dir but not diagonal and we have to move
+$ forAll t : int(1..steps) . 
+$   |moveCol[t]| + |moveRow[t]| = 1,
+
+
+$ $update avatar position
+$ forAll t : int(1..steps) . 
+$   avatarCurrentRow[t] = avatarCurrentRow[t-1] + moveRow[t] 
+$   /\ avatarCurrentCol[t] = avatarCurrentCol[t-1] + moveCol[t],
+
+$ $make sure the avatar is not standing on top of a box
+$ forAll t : int(1..steps) .
+$   !exists block : int(1..numBlocks) .
+$     avatarCurrentCol[t] = blocksCurrentCol[t,block] /\ avatarCurrentRow[t] = blocksCurrentRow[t,block],
+
+
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ GAME LOGIC $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$ $at the end all goals have a block. 
+$ forAll goalNumb : int(1..numBlocks) . 
+$   exists blockNumb : int(1..numBlocks) . 
+$     blocksCurrentCol[steps,blockNumb] = blocksGoalCol[goalNumb] 
+$   /\ blocksCurrentRow[steps,blockNumb] = blocksGoalRow[goalNumb],
+
+
+$ $dead cells stay dead
+$ forAll t : int(0..steps-1) . 
+$   forAll row : int(1..r) .
+$     forall col : int(1..c) .
+$       gridCurrent[t,row,col] = 0 -> gridCurrent[t+1,row,col] = 0,
+
+$ $normal cells stay normal
+$ forAll t : int(0..steps-1) .
+$   forAll row : int(1..r) .
+$     forall col : int(1..c) .
+$       gridCurrent[t,row,col] = 2 -> gridCurrent[t+1,row,col] = 2,
+
+$ $ice cracs when you leave it. we don't allow non movement so checking whether avatar enters it is enough
+$ forAll t : int(0..steps-1) .
+$   gridCurrent[t,avatarCurrentRow[t],avatarCurrentCol[t]] = 1 
+$     -> gridCurrent[t+1,avatarCurrentRow[t],avatarCurrentCol[t]] = 0,
+
+$ $until the avatar steps on them ice cells stay ice 
+$ forAll t : int(0..steps-1)  .
+$   forAll row : int(1..r) .
+$     forall col : int(1..c) .
+$       gridCurrent[t,row,col] = 1 
+$         /\ (avatarCurrentCol[t] != col \/ avatarCurrentRow[t] != row)
+$       ->
+$         gridCurrent[t+1,row,col] = 1,
+
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ BLOCK MOVEMENT $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$ $ make the blocks move
+$ forAll t : int(0..steps-1) .
+$   forAll blockNumb : int(1..numBlocks) .
+$   (blocksCurrentCol[t,blockNumb] = avatarCurrentCol[t] + moveCol[t+1]
+$     /\  blocksCurrentRow[t,blockNumb] = avatarCurrentRow[t] + moveRow[t+1])
+$   ->
+$   (blocksCurrentCol[t+1,blockNumb] = blocksCurrentCol[t,blockNumb] + moveCol[t+1]
+$     /\ blocksCurrentRow[t+1,blockNumb] = blocksCurrentRow[t,blockNumb] + moveRow[t+1]),
+
+
+$ $ make the blocks stay if they aren't pushed
+$ forAll t : int(0..steps-1) .
+$   forAll blockNumb : int(1..numBlocks) .
+$     !(blocksCurrentCol[t,blockNumb] = avatarCurrentCol[t] + moveCol[t+1]
+$       /\  blocksCurrentRow[t,blockNumb] = avatarCurrentRow[t] + moveRow[t+1])
+$     ->
+$     (blocksCurrentCol[t+1,blockNumb] = blocksCurrentCol[t,blockNumb]
+$       /\ blocksCurrentRow[t+1,blockNumb] = blocksCurrentRow[t,blockNumb]),
+
+$ $Can use GCC for this with matrix comprehentions
+$ $ $ make sure that blocks never enter dead cels. 
+$ forAll t : int(0..steps) .
+$   forAll blockNumb : int(1..numBlocks) .
+$     gridCurrent[t,blocksCurrentRow[t,blockNumb],blocksCurrentCol[t,blockNumb]] != 0,
+
+$ $ $blocks can't share a cell
+$ forAll t : int(0..steps) .
+$   forAll block : int(1..numBlocks) .
+$     forAll sndBlock : int(1..numBlocks) .
+$       block != sndBlock 
+$       ->
+$         blocksCurrentCol[t,block] != blocksCurrentCol[t,sndBlock]
+$         \/ blocksCurrentRow[t,block] != blocksCurrentRow[t,sndBlock],
+
+$ $ $can only move one block at a time
+$ forAll t : int(1..steps) .
+$   forAll blockNumb : int(1..numBlocks) .
+$     (avatarCurrentCol[t] + moveCol[t] = blocksCurrentCol[t, blockNumb] 
+$       /\ avatarCurrentRow[t] + moveRow[t] = blocksCurrentRow[t, blockNumb])
+$     ->
+$       (!exists sndBlock : int(1..numBlocks) .
+$         avatarCurrentCol[t] + (moveCol[t] * 2) = blocksCurrentCol[t, sndBlock]
+$          /\ avatarCurrentRow[t] + (moveRow[t] * 2) = blocksCurrentRow[t, sndBlock]),
+
+$ true
