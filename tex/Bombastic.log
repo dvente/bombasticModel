@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  18 FEB 2018 12:39
+This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  18 FEB 2018 14:54
  restricted system commands enabled.
 **Bombastic.tex
 (./Bombastic.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 2.059 seconds
+luaotfload | main : initialization completed in 1.845 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -854,44 +854,50 @@ KTeX/2.9/luatex-cache/generic/fonts/otl/lmmono10-regular.luc)(load luc: C:/Users
 {C:/Users/Daniel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}](load luc: C
 :/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10
 -bold.luc) [2] [3] [4]
-<stepsVsCPUSec.png, id=25, pagebox=cropbox, 897.3525pt x 430.60875pt>
-File: stepsVsCPUSec.png Graphic file (type png)
-<use stepsVsCPUSec.png>
-Package luatex.def Info: stepsVsCPUSec.png  used on input line 181. on input lin
-e 181.
-Package luatex.def Info: Requested size: 422.77664pt x 202.87234pt on input line
+
+LaTeX Warning: Reference `stepsVsCPUSec' on page 5 undefined on input line 177.
+
+<idVsCPUSec.png, id=25, pagebox=cropbox, 897.3525pt x 431.6125pt>
+File: idVsCPUSec.png Graphic file (type png)
+<use idVsCPUSec.png>
+Package luatex.def Info: idVsCPUSec.png  used on input line 181. on input line 1
+81.
+Package luatex.def Info: Requested size: 422.77664pt x 203.34525pt on input line
  181.
- [5<./stepsVsCPUSec.png>]
-<idVsCPUSecDiffed.png, id=30, pagebox=cropbox, 897.3525pt x 443.6575pt>
+[5<./idVsCPUSec.png>]
+<idVsCPUSecDiffed.png, id=30, pagebox=cropbox, 894.34125pt x 443.6575pt>
 File: idVsCPUSecDiffed.png Graphic file (type png)
 <use idVsCPUSecDiffed.png>
 Package luatex.def Info: idVsCPUSecDiffed.png  used on input line 200. on input 
 line 200.
-Package luatex.def Info: Requested size: 422.77664pt x 209.02pt on input line 20
-0.
+Package luatex.def Info: Requested size: 422.77664pt x 209.73082pt on input line
+ 200.
  [6<./idVsCPUSecDiffed.png>]
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang1
 .sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (../timer.py [7])
 
-LaTeX Warning: Empty bibliography on input line 222.
+LaTeX Warning: Empty bibliography on input line 224.
 
 [8] (./Bombastic.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'Bombastic.run.xml'.
 
 \openout1 = Bombastic.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 12910 strings out of 494456
- 156472,794899 words of node,token memory allocated
+ 12911 strings out of 494456
+ 156470,794899 words of node,token memory allocated
  501 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 6 attribute, 56 glue_spec, 6 attrib
 ute_list, 1 write nodes
-   avail lists: 1:5,2:3395,3:64,4:324,5:3665,6:36,7:5310,8:1989,9:5213,10:38,11:
-413
- 16523 multiletter control sequences out of 65536+200000
+   avail lists: 1:4,2:3394,3:65,4:324,5:3655,6:36,7:5179,8:1989,9:5214,10:38,11:
+404
+ 16524 multiletter control sequences out of 65536+200000
  54 fonts using 4085463 bytes
  43i,10n,45p,997b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmro
@@ -910,7 +916,7 @@ b><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/txfonts/t1xbtt.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/txfonts/t1xtt.pfb>
-Output written on Bombastic.pdf (8 pages, 175090 bytes).
+Output written on Bombastic.pdf (8 pages, 187017 bytes).
 
 PDF statistics: 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)

@@ -174,17 +174,17 @@
 	%\end{wrapfigure}
 	
 	\subsubsection{Computation per step}
-	Because of the intricate nature of constraint problems, in general, I cannot make precise claims about space or time complexity of these problems. Therefore I will only discuss the empirical results found. In figure \ref{stepsVsCPUSec} you will find the computation times of all the instances that succeeded.
+	Because of the intricate nature of constraint problems, in general, I cannot make precise claims about space or time complexity of these problems. Therefore I will only discuss the empirical results found. In figure \ref{stepsVsCPUSec} you will find the computation times of all the instances that failed.
 	\FloatBarrier
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[width=0.9\textwidth]{stepsVsCPUSec}
-		\caption{The number of steps of the requested solution vs. user CPU time. (lower is better) Note that the scale used is logarithmic}
-		\label{stepsVsCPUSec}	
+		\includegraphics[width=0.9\textwidth]{idVsCPUSec}
+		\caption{The instance id vs. user CPU time. (lower is better) User IDs of the designed instances are arranged to have increasing step sizes.}
+		\label{idVsCPUSec}	
 	\end{figure}
 	\FloatBarrier 
 	
-	When the problems are relatively small, the level of optimisation doesn't matter that much. For the simpler problems, the least number of optimisation seems to be best, which makes sense since the extra overhead of optimisation might not be worth it for such small problems. As we increase the length of the requested solution we see that levels 1 and 2 remain roughly linear. Optimisation level 0 and 3 however, eventually start exhibiting exponential behaviour. For level 0 this is what we expected since the search space grows too fast if we don't make smart optimisations for this.
+	When the problems are relatively small, the level of optimisation doesn't matter that much. For the simpler problems, the least number of optimisation seems to be best, which makes sense since the extra overhead of optimisation might not be worth it for such small problems. As we increase the length of the requested solution we see that levels 1 and 2 remain roughly linear. Optimisation level 0 and 3 however, eventually start exhibiting exponential behaviour. For level 0 this is what we expected since the search space grows too fast if we don't make smart optimisations for this. The dip that happens around 10 is because that is the threshold for the designed instances which start out with a low step length.
 	
 	\paragraph{Heavy optimisation} What happens to level 3, however, is slightly more counter-intuitive. This can explained as follows: Optimisation is a lot of work and if the search space is less conducive to optimisation it can waste a lot of effort. I assume that this is what happened since I was not able to model the problem using many global constraints. These global constraints are easiest the optimise away, so the fact that we didn't use them that much might make the heavy optimisation not worthwhile. As we mentioned earlier this is where the solver can spend a lot of extra time trying to optimise our redundant constraints away. 
 	
@@ -204,12 +204,14 @@
 	\end{figure}
 	\FloatBarrier
 	
-	Looking at the graph, we see that the relative difference in computing time roughly increases with the \code{instance\_id} i.e. with higher solution length.  This also makes sense since at higher steps adding another step increases the possible state space to search, but much more than adding steps to small spaces. The dip that happens around 10 is because that is the threshold for the designed instances which start out with a low step length.  It is clear that again level 0 and level 3 have the highest difference, with 3 having the highest of all. This makes sense since level 0 must traverse almost all of the search space, a single step increase can have big consequences. Conversely, heavily optimised runs could possibly find solutions much faster when a solution is possible creating a big difference to when there is no solution and it has to search an entire space anyway, effectively wasting the optimisation time. 
+	Looking at the graph, we see that the relative difference in computing time roughly increases with the \code{instance\_id} i.e. with higher solution length.  This also makes sense since at higher steps adding another step increases the possible state space to search, but much more than adding steps to small spaces. It is clear that again level 0 and level 3 have the highest difference, with 3 having the highest of all. This makes sense since level 0 must traverse almost all of the search space, a single step increase can have big consequences. Conversely, heavily optimised runs could possibly find solutions much faster when a solution is possible creating a big difference to when there is no solution and it has to search an entire space anyway, effectively wasting the optimisation time. 
 	
 	\section{Conclusion}
 	\label{conclusion}
 	For this assignment, I modelled an abstracted version of the game Bombastic. In this report, I discussed the rules and how I modelled them using Savile Row. Eventually,I found that both optimisation levels 0 and 3 produced less than optimal results, with level 2 performing best across the board. 	
-	word count: 
+	
+	
+	word count: 2732
 	
 	\FloatBarrier
 	\begin{appendices} 	
