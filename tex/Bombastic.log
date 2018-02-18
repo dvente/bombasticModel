@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  16 FEB 2018 20:31
+This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  18 FEB 2018 12:39
  restricted system commands enabled.
 **Bombastic.tex
 (./Bombastic.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 1.850 seconds
+luaotfload | main : initialization completed in 2.059 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -885,15 +885,15 @@ Package logreq Info: Writing requests to 'Bombastic.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  12910 strings out of 494456
- 156468,794899 words of node,token memory allocated
+ 156472,794899 words of node,token memory allocated
  501 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 6 attribute, 56 glue_spec, 6 attrib
 ute_list, 1 write nodes
-   avail lists: 1:2,2:3507,3:69,4:324,5:3778,6:37,7:5269,8:2054,9:5382,10:38,11:
-417
+   avail lists: 1:5,2:3395,3:64,4:324,5:3665,6:36,7:5310,8:1989,9:5213,10:38,11:
+413
  16523 multiletter control sequences out of 65536+200000
  54 fonts using 4085463 bytes
- 43i,10n,45p,1008b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,10n,45p,997b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmro
 man10-bold.otf><c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype
 /public/lm/lmroman10-italic.otf><c:/users/daniel/appdata/local/programs/miktex 2
@@ -910,7 +910,7 @@ b><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/txfonts/t1xbtt.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/txfonts/t1xtt.pfb>
-Output written on Bombastic.pdf (8 pages, 175464 bytes).
+Output written on Bombastic.pdf (8 pages, 175090 bytes).
 
 PDF statistics: 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)

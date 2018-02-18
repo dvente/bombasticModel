@@ -1,9 +1,9 @@
-[2] Config.pm:302> INFO - This is Biber 2.10
-[3] Config.pm:305> INFO - Logfile is 'Bombastic.blg'
-[87] biber-MSWIN64:313> INFO - === 
-[173] Biber.pm:371> INFO - Reading 'Bombastic.bcf'
-[368] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[378] Utils.pm:193> WARN - The file 'Bombastic.bcf' does not contain any citations!
-[392] bbl.pm:617> INFO - Writing 'Bombastic.bbl' with encoding 'UTF-8'
-[393] bbl.pm:720> INFO - Output to Bombastic.bbl
-[400] Biber.pm:110> INFO - WARNINGS: 1
+[0] Config.pm:302> INFO - This is Biber 2.10
+[0] Config.pm:305> INFO - Logfile is 'Bombastic.blg'
+[74] biber-MSWIN64:313> INFO - === 
+[164] Biber.pm:371> INFO - Reading 'Bombastic.bcf'
+[309] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[322] Utils.pm:193> WARN - The file 'Bombastic.bcf' does not contain any citations!
+[335] bbl.pm:617> INFO - Writing 'Bombastic.bbl' with encoding 'UTF-8'
+[335] bbl.pm:720> INFO - Output to Bombastic.bbl
+[340] Biber.pm:110> INFO - WARNINGS: 1
